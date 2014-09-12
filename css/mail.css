@@ -1,0 +1,22 @@
+/************************************************************************************/
+/************************************************************************************/
+/********************************** General styles **********************************/
+/************************************************************************************/
+/************************************************************************************/
+#mimemail-body {
+  /*background-color: #555;*/
+  /*background: url("sites/all/themes/skeleton/images/custom/wide-image-1.png") no-repeat scroll 50% 0% #000;*/
+  /*color: #fff;*/
+  font-family: 'Trebuchet MS',Geneva,sans-serif !important;
+  font-size: 14px;
+}
+#mimemail-body table {
+  /*background: url("sites/all/themes/skeleton/images/custom/wide-image-1.png") no-repeat scroll 50% 0% #000;*/
+  /*color: #ffffff;*/
+}
+#mimemail-body table td.text-right {
+  text-align: right;
+}
+#mimemail-body table table td {
+  /*border: solid 1px #555555;*/
+}

@@ -1,0 +1,108 @@
+name        = Skeleton
+description = Starter theme by diresta - drupal-solutions
+screenshot  = screenshot.png
+core        = 7.x
+
+
+; Stylesheets
+
+; Skeleton - Add bootstrap
+stylesheets[all][] = css/bootstrap.min.css
+stylesheets[all][] = css/styles.css
+stylesheets[all][] = css/bootstrap-responsive.min.css
+stylesheets[all][] = css/font-awesome.min.css
+stylesheets[all][] = css/flexslider.css
+
+
+; Scripts
+
+; Optionally add some JavaScripts to your theme.
+scripts[] = js/bootstrap.min.js
+scripts[] = js/jquery.isotope.min.js
+scripts[] = js/jquery.flexslider-min.js
+scripts[] = js/script.js
+
+
+; Regions
+
+; This section lists the regions defined in Skeleton page.tpl.php and
+; maintenance-page.tpl.php files.
+;
+; In the page.tpl, the contents of the region are output with a
+; $page['MACHINE-NAME'] variable and, in the maintenance-page.tpl, the region is
+; output with a $MACHINE-NAME variable. For example, with this line in the .info
+; file:
+;   regions[header_top] = Header top
+; You'll use this variable in page.tpl.php:
+;   <?php print render($page['header_top']); ?>
+; And you'll use this variable in maintenance-page.tpl.php:
+;   <?php print $header_top; ?>
+
+regions[header-left]         = Header left
+regions[header-right]        = Header right
+regions[highlighted]         = Highlighted
+regions[help]                = Help
+
+regions[top_content_left]    = Top content left
+regions[top_content_right]   = Top content right
+
+
+regions[content]             = Content
+regions[sidebar_first]       = First sidebar
+regions[sidebar_second]      = Second sidebar
+regions[content_wide1]       = Content wide 1
+regions[content_wide2]       = Content wide 2
+regions[content_wide3]       = Content wide 3
+regions[content_wide4]       = Content wide 4
+
+regions[footer_firstcolumn]  = Footer first column
+regions[footer_secondcolumn] = Footer second column
+regions[footer_thirdcolumn]  = Footer third column
+regions[footer_fourthcolumn] = Footer fourth column
+regions[footer_left]         = Footer left
+regions[footer_right]        = Footer right
+
+
+; The page_top and page_bottom regions are hidden, which means they will not
+; show up on the blocks administration page. But they are required in order for
+; the html.tpl.php to work properly, so do not delete them.
+
+regions[page_top]       = Page top
+regions[page_bottom]    = Page bottom
+
+
+
+; Various page elements output by the theme can be toggled on and off. The
+; "features" control which of these check boxes display on the
+; admin/appearance config page. This is useful for suppressing check boxes
+; for elements not used by your sub-theme. To suppress a check box, omit the
+; entry for it below. See the Drupal 7 Theme Guide for more info:
+; https://drupal.org/node/171205#features
+
+features[] = logo
+features[] = name
+features[] = slogan
+features[] = node_user_picture
+features[] = comment_user_picture
+features[] = favicon
+features[] = main_menu
+features[] = secondary_menu
+
+
+
+; Set the default values of settings on the theme-settings.php form.
+settings[theme_color] = default
+settings[fixed_header] = no
+
+settings[breadcrumb_display]   = yes
+settings[breadcrumb_position   = left
+settings[breadcrumb_separator] = ' › '
+settings[breadcrumb_home]      = 1
+settings[breadcrumb_trailing]  = 0
+settings[breadcrumb_title]     = 0
+settings[skip_link_anchor]     = main-menu
+settings[skip_link_text]       = Jump to navigation
+settings[html5_respond_meta][] = respond
+settings[html5_respond_meta][] = html5
+settings[html5_respond_meta][] = meta
+settings[rebuild_registry]     = 1

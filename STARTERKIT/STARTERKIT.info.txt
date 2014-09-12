@@ -1,0 +1,48 @@
+name = Starterkit
+description = This is a sub-theme of theme Skeleton.
+core = 7.x
+base theme = skeleton
+
+
+; Stylesheets
+
+stylesheets[all][] = css/style.css
+
+; Scripts
+
+; Optionally add some JavaScripts to your theme.
+;scripts[] = js/starterkit.js
+
+; Regions
+
+regions[header-left]         = Header left
+regions[header-right]        = Header right
+regions[highlighted]         = Highlighted
+regions[help]                = Help
+
+regions[top_content_left]    = Top content left
+regions[top_content_right]   = Top content right
+
+regions[content]             = Content
+regions[sidebar_first]       = First sidebar
+regions[sidebar_second]      = Second sidebar
+regions[content_wide1]       = Content wide 1
+regions[content_wide2]       = Content wide 2
+regions[content_wide3]       = Content wide 3
+regions[content_wide4]       = Content wide 4
+
+regions[footer_firstcolumn]  = Footer first column
+regions[footer_secondcolumn] = Footer second column
+regions[footer_thirdcolumn]  = Footer third column
+regions[footer_fourthcolumn] = Footer fourth column
+regions[footer_left]         = Footer left
+regions[footer_right]        = Footer right
+
+
+; The page_top and page_bottom regions are hidden, which means they will not
+; show up on the blocks administration page. But they are required in order for
+; the html.tpl.php to work properly, so do not delete them.
+
+regions[page_top]       = Page top
+regions[page_bottom]    = Page bottom
+

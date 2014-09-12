@@ -1,0 +1,497 @@
+/************************************************************************************/
+/************************************************************************************/
+/************************************ Typography ************************************/
+/************************************************************************************/
+/************************************************************************************/
+
+.block-title:before,
+.block-title-small:before {
+  color: tomato;
+}
+
+.textcolor {
+  color: tomato;
+}
+
+/* Blockquotes */
+blockquote {
+   border-left: 1px solid tomato;
+}
+
+blockquote.pull-right {
+   border-right: 1px solid tomato;
+}
+
+
+
+
+
+
+/***********************************************************************************/
+/***********************************************************************************/
+/************************************** Links **************************************/
+/***********************************************************************************/
+/***********************************************************************************/
+
+a {
+  color: tomato;
+}
+
+li a.active {
+  color: tomato;
+}
+
+
+
+
+
+
+/***********************************************************************************/
+/***********************************************************************************/
+/************************************* Regions *************************************/
+/***********************************************************************************/
+/***********************************************************************************/
+
+/*************************************/
+/**** footer four columns regions ****/
+/*************************************/
+
+#footer-four-columns a:hover,
+#footer-four-columns a:focus {
+  color: tomato;
+}
+
+
+
+/*************************************/
+/*********** footer region ***********/
+/*************************************/
+
+footer a:hover,
+footer a:focus {
+  color: tomato;
+}
+
+
+
+
+
+
+/**********************************************************************************/
+/**********************************************************************************/
+/************************************** Menu **************************************/
+/**********************************************************************************/
+/**********************************************************************************/
+
+/*************************************/
+/********** Main navigation **********/
+/*************************************/
+
+.navbar .nav > li > a:hover,
+.navbar .nav > li > a:focus {
+  color: tomato;
+  border-bottom: 1px solid tomato;
+}
+
+.navbar .nav > .active > a,
+.navbar .nav > .active > a:hover,
+.navbar .nav > .active > a:focus {
+  color: tomato;
+  border-bottom: 1px solid tomato;
+}
+
+/* Dropdown menu */
+li.dropdown:hover > a {
+  color: tomato;
+}
+
+.dropdown-menu {
+  border-top: 1px solid tomato;
+}
+
+.dropdown-menu > li > a:hover,
+.dropdown-menu > li > a:focus,
+.dropdown-submenu:hover > a,
+.dropdown-submenu:focus > a {
+  color: tomato;
+}
+
+.dropdown-menu > .active > a,
+.dropdown-menu > .active > a:hover,
+.dropdown-menu > .active > a:focus {
+  color: tomato;
+}
+
+.navbar .nav li.dropdown.open > .dropdown-toggle,
+.navbar .nav li.dropdown.active > .dropdown-toggle,
+.navbar .nav li.dropdown.open.active > .dropdown-toggle {
+  color: tomato;
+}
+
+
+
+/*************************************/
+/******** Administration menu ********/
+/*************************************/
+
+.nav-pills > li > a:hover,
+.nav-pills > li > a:focus,
+.nav-pills > .active > a,
+.nav-pills > .active > a:hover,
+.nav-pills > .active > a:focus {
+  color: tomato;
+}
+
+
+
+
+
+
+/************************************************************************************/
+/************************************************************************************/
+/************************************** Slider **************************************/
+/************************************************************************************/
+/************************************************************************************/
+
+/*************************************/
+/************ Nivo Slider ************/
+/*************************************/
+
+.theme-default .nivo-controlNav a.active {
+  color: tomato;
+}
+
+
+
+/*************************************/
+/********** Sequence Slider **********/
+/*************************************/
+
+.sequence-preloader .preloading .circle {
+    fill: tomato;
+}
+
+
+
+
+
+
+/*********************************************************************************/
+/*********************************************************************************/
+/*********************************** Portfolio ***********************************/
+/*********************************************************************************/
+/*********************************************************************************/
+
+.portfolio-item:hover .portfolio-title {
+  border-bottom: 1px solid tomato;
+}
+
+.portfolio-item .portfolio-title a:hover {
+  color: tomato;
+}
+
+/* Portfolio Block Version 2 */
+
+.portfolio-block-2 .portfolio2-item a {
+  background: tomato;
+}
+
+
+
+
+
+
+/********************************************************************************/
+/********************************************************************************/
+/************************************ Blocks ************************************/
+/********************************************************************************/
+/********************************************************************************/
+
+/****************************/
+/********** Panels **********/
+/****************************/
+
+/* Panels Version 1 */
+.panel .panel-icon .icon {
+  box-shadow: 0 0 0 2px tomato;
+}
+
+.panel .panel-icon .icon:after {
+  background: tomato;
+}
+
+.panel:hover .panel-icon .icon {
+  color: tomato;
+}
+
+.panel:hover .panel-info h3 {
+   color: tomato;
+}
+
+/* Panels Version 2 */
+
+.panel-2:hover h4 {
+  color: tomato;
+}
+
+.panel-2 .panel-icon {
+  box-shadow: 0 0 0 1px tomato;
+}
+
+.panel-2 .panel-icon:after {
+  background: tomato;
+}
+
+.panel-2:hover .panel-icon {
+  color: tomato;
+}
+
+
+
+/****************************/
+/******* Testimonials *******/
+/****************************/
+
+#testimonials blockquote i {
+  color: tomato;
+}
+
+
+
+/*****************************/
+/****** Social Networks ******/
+/*****************************/
+
+#social-widget-footer a:hover,
+#social-widget-header a:hover {
+  color: tomato;
+}
+
+
+
+/*******************************/
+/********* Login block *********/
+/*******************************/
+
+/* modal user login */
+#myLoginModal a {
+  color: tomato;
+}
+
+
+
+
+
+
+/********************************************************************************/
+/********************************************************************************/
+/******************************** Theme Features ********************************/
+/********************************************************************************/
+/********************************************************************************/
+
+/*****************************/
+/********* Carousels *********/
+/*****************************/
+
+.carousel-arrows .carousel-arrow-left:hover,
+.carousel-arrows .carousel-arrow-right:hover {
+  color: tomato;
+}
+
+
+
+/*****************************/
+/********** Buttons **********/
+/*****************************/
+
+.btn {
+  color: #fff;
+  background-color: tomato;
+  *background-color: tomato;
+}
+
+.btn:hover,
+.btn:focus,
+.btn:active,
+.btn.active,
+.btn.disabled,
+.btn[disabled] {
+  color: #fff;
+  background-color: coral;
+  *background-color: coral;
+}
+
+/* Buttons styles */
+.btn-light {
+  color: #fff;
+  background-color: darksalmon;
+  *background-color: darksalmon;
+}
+
+.btn-light:hover,
+.btn-light:focus,
+.btn-light:active,
+.btn-light.active,
+.btn-light.disabled,
+.btn-light[disabled] {
+  color: #fff;
+  background-color: lightsalmon;
+  *background-color: lightsalmon;
+}
+.btn-primary {
+  background-color: tomato;
+  *background-color: tomato;
+}
+
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active,
+.btn-primary.active,
+.btn-primary.disabled,
+.btn-primary[disabled] {
+  background-color: coral;
+  *background-color: coral;
+}
+
+.btn-link {
+  color: tomato;
+}
+
+
+
+/**************************/
+/********** Tabs **********/
+/**************************/
+
+.nav-tabs > .active > a,
+.nav-tabs > .active > a:hover,
+.nav-tabs > .active > a:focus {
+  border-top: 1px solid tomato;
+}
+
+/* Left Tabs */
+.tabs-left > .nav-tabs > .active > a,
+.tabs-left > .nav-tabs > .active > a:hover,
+.tabs-left > .nav-tabs > .active > a:focus {
+  border-left: 1px solid tomato;
+}
+
+/* Right Tabs */
+.tabs-right > .nav-tabs > .active > a,
+.tabs-right > .nav-tabs > .active > a:hover,
+.tabs-right > .nav-tabs > .active > a:focus {
+  border-right: 1px solid tomato;
+}
+
+/* Below Tabs */
+.tabs-below > .nav-tabs > .active > a,
+.tabs-below > .nav-tabs > .active > a:hover,
+.tabs-below > .nav-tabs > .active > a:focus {
+  border-bottom: 1px solid tomato;
+}
+
+
+
+/**************************************/
+/*****   Labels, Badges, Alerts   *****/
+/***** Progress Bars, Wells, Hero *****/
+/**************************************/
+
+.progress .bar {
+  background-color: tomato;
+}
+
+.progress-striped .bar {
+  background-color: tomato;
+}
+
+/* Wells */
+.well blockquote {
+  border-color: tomato;
+}
+
+.well blockquote.pull-right {
+  border-color: tomato;
+}
+
+
+
+/**********************************/
+/***********  Our Team  ***********/
+/**********************************/
+
+.team-social a:hover {
+  color: tomato;
+}
+
+/**********************************/
+/***********  Minishop  ***********/
+/**********************************/
+#header-region .minishop-cart-checkout-button a.btn:hover,
+#header-region .minishop-cart-checkout-button a.btn:focus,
+#header-region .minishop-cart-checkout-button a.btn:active,
+#header-region .minishop-cart-checkout-button a.btn.active,
+#header-region .minishop-cart-checkout-button a.btn.disabled,
+#header-region .minishop-cart-checkout-button a.btn[disabled] {
+  background-color: coral !important;
+  *background-color: coral !important;
+}
+
+
+
+
+
+/*********************************************************************************/
+/*********************************************************************************/
+/******************************** Settings styles ********************************/
+/*********************************************************************************/
+/*********************************************************************************/
+
+/* Background colors */
+
+.bg-color-theme { background-color: tomato; }
+
+/* Text colors */
+
+.text-color-theme { color: tomato; }
+
+
+
+
+
+
+@media (max-width: 979px) {
+  
+  /**********************************************************************************/
+  /**********************************************************************************/
+  /************************************** Menu **************************************/
+  /**********************************************************************************/
+  /**********************************************************************************/
+
+  /*************************************/
+  /********** Main navigation **********/
+  /*************************************/
+  
+  .navbar .brand {
+    border-bottom: 2px solid tomato;
+  }
+  
+  /* Dropdown menu */
+  .nav-collapse .nav > li:focus > a,
+  .nav-collapse .nav > li:hover > a,
+  .nav-collapse .nav > li > a:hover,
+  .nav-collapse .nav > li > a:focus,
+  .nav-collapse .dropdown-menu a:hover,
+  .nav-collapse .dropdown-menu a:focus {
+    color: tomato;
+  }
+  
+  .navbar .nav > .active > a,
+  .navbar .nav > .active > a:hover,
+  .navbar .nav > .active > a:focus {
+    color: tomato;
+  }
+
+
+
+}
