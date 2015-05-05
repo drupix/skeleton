@@ -196,10 +196,24 @@ jQuery(window).load(function() {
 
   $(document).ready(function() {
     
+    // Set the layout version
+    var layout_version = Drupal.settings['settings']['layout_version'];
+    
+    if (layout_version == "boxed") {     
+      $('body').addClass('boxed');
+      $('#main-wrapper').addClass('boxed-version');
+      $('#footer-wrapper').addClass('boxed-version');
+    }
+    
     $.setPagePosition();
     
     $("#myLoginModal").appendTo("body");
 
+    // popovers
+    $('.popovers').popover({
+      container: 'body'
+    });
+    
     // tooltips
     $('.tooltips').tooltip({
       container: 'body'

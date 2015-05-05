@@ -7,28 +7,36 @@ function skeleton_menu_tree($variables) {
 
 // Theming the links in the menu
 function skeleton_menu_link(array $variables) {
-   $element = $variables['element'];
+  $element = $variables['element'];
+  $link = $element['#original_link'];
+  $attributes = array();
+  $options = $element['#localized_options'];
 
-   $link = $element['#original_link'];
-   $attributes = array();
-   $options = $element['#localized_options'];
+  // Mark link as active.
+  if ($link['in_active_trail']) {
+    $attributes['class'][] = 'active';
+  }
 
-   // Mark link as active.
-   if ($link['in_active_trail']) {
-      $attributes['class'][] = 'active';
-   }
+  // In the user-menu, display link as button.
+  /*
+  if ($link['menu_name'] == 'user-menu') {
+    $attributes['class'][] = 'btn';
+  }
+  */
 
-   // Build link output.
-   $output = '';
-   $output .= '<li' . drupal_attributes($attributes) . '>';
-   $output .= l($element['#title'], $element['#href'], $options);
-   $output .= '</li>';
+  // Build link output.
+  $output = '';
+  $output .= '<li' . drupal_attributes($attributes) . '>';
+  $output .= l($element['#title'], $element['#href'], $options);
+  $output .= '</li>';
 
-   return $output;
+  return $output;
 }
 
 // Theming the links in the main menu
 function skeleton_menu_link__main_menu(array $variables) {
+  //dpm($variables);
+
   $element = $variables['element'];
   $sub_menu = '';
 
@@ -68,21 +76,25 @@ function skeleton_menu_link__main_menu(array $variables) {
   return $output;
 }
 
+/*
 // Theming the links in the secondary menu
 function skeleton_menu_link__secondary_menu(array $variables) {
-   $element = $variables['element'];
+  $element = $variables['element'];
 
-   $attributes = array();
-   $options = $element['#localized_options'];
+  $attributes = array();
+  $options = $element['#localized_options'];
 
-   // Build link output.
-   $output = '';
-   $output .= '<li' . drupal_attributes($attributes) . '>';
-   $output .= l($element['#title'], $element['#href'], $options);
-   $output .= '</li>';
+  $options['attributes']['class'][] = 'btn';
 
-   return $output;
+  // Build link output.
+  $output = '';
+  $output .= '<li' . drupal_attributes($attributes) . '>';
+  $output .= l($element['#title'], $element['#href'], $options);
+  $output .= '</li>';
+
+  return $output;
 }
+*/
 
 // Theming the local tasks
 function skeleton_menu_local_tasks(&$variables) {

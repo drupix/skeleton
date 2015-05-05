@@ -50,6 +50,7 @@ function skeleton_preprocess_html(&$variables, $hook) {
   }
 
   $color = theme_get_setting('theme_color');
+  $layout_version = theme_get_setting('layout_version');
 
   if ($GLOBALS['theme'] == 'skeleton') {
 
@@ -73,6 +74,7 @@ function skeleton_preprocess_html(&$variables, $hook) {
   $google_description = theme_get_setting('google_description');
 
   $settings = array('theme_color' => $color,
+                    'layout_version' => $layout_version,
                     'google_latitude'    => $google_latitude,
                     'google_longitude'   => $google_longitude,
                     'google_zoom'        => $google_zoom,
@@ -82,7 +84,9 @@ function skeleton_preprocess_html(&$variables, $hook) {
   drupal_add_js(array("settings" => $settings), 'setting');
 
   // external javascript for google maps
-  drupal_add_js('http://maps.google.com/maps/api/js?sensor=false&language=' . $language->language, 'external');
+  if(!module_exists('gmap')) {
+    drupal_add_js('http://maps.google.com/maps/api/js?sensor=false&language=' . $language->language, 'external');
+  }
 
 }
 
@@ -333,7 +337,7 @@ function skeleton_preprocess_maintenance_page(&$variables) {
 function skeleton_breadcrumb($variables) {
   $breadcrumb = $variables['breadcrumb'];
   $display = theme_get_setting('breadcrumb_display');
-  $delimiter = theme_get_setting('breadcrumb_delimiter');
+  $delimiter = theme_get_setting('breadcrumb_separator');
 
   $output = "";
 

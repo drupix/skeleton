@@ -31,9 +31,16 @@ body.cke_show_borders {
 }
 
 body.admin-menu {
-  margin-top: 28px !important;
+  margin-top: 24px !important;
 }
-
+#main-wrapper {
+  background-color: white;
+}
+.boxed-version {
+  box-shadow: 0 0 6px -1px rgba(0, 0, 0, 0.3);
+  margin: 25px auto;
+  max-width: 1170px;
+}
 #page {
   background-color: #FFFFFF;
 }
@@ -85,6 +92,8 @@ body.admin-menu {
 /************************************ Typography ************************************/
 /************************************************************************************/
 /************************************************************************************/
+
+/*
 h1, h2, h3, h4, h5, h6 {
   color: #555555;
   font-weight: normal;
@@ -120,6 +129,7 @@ h6 {
   font-size: 14px;
   margin: 15px 0px 15px;
 }
+*/
 
 p, li, span {
   line-height: 22px;
@@ -192,6 +202,40 @@ code {
 blockquote {
   margin: 10px 0;
 }
+
+blockquote {
+  background: #f7f7f7;
+  border-left: 1px solid #bbb;
+  font-style: italic;
+/*  margin: 1.5em 10px;*/
+  padding: 0.5em 10px;
+}
+blockquote:before {
+  color: #bbb;
+  content: "\201C";
+  font-family: "Trebuchet MS",Geneva,sans-serif !important;
+  font-size: 3em;
+  line-height: 0.1em;
+  margin-right: 0.2em;
+  vertical-align: -.4em;
+}
+blockquote:after {
+  color: #bbb;
+  content: "\201D";
+  font-family: "Trebuchet MS",Geneva,sans-serif !important;
+  font-size: 3em;
+  line-height: 0.1em;
+  vertical-align: -.45em;
+}
+blockquote > p:first-child {
+  display: inline;
+  /*
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+  */
+}
+
+
 
 blockquote.pull-right {
   float: none;
@@ -319,6 +363,7 @@ footer {
   margin: 0;
 }
 #top-page.fixed {
+  border-bottom: 1px solid #ededed;
   position: fixed;
   top: 0;
   width: 100%;
@@ -344,8 +389,11 @@ footer {
   padding-bottom: 3px;
   padding-top: 3px;
 }
+.fixed-header.admin-menu #header-region {
+  margin-top: 0px;
+}
 .admin-menu #header-region {
-  margin-top: 6px;
+  /*margin-top: 6px;*/
 }
 
 #header-region .span6 {
@@ -389,6 +437,7 @@ footer {
 .block-locale {
   float: right;
   margin: 0 0 0 40px;
+  z-index: 1;
 }
 ul.language-switcher-locale-url {
   margin: 0;
@@ -430,7 +479,7 @@ header {
   border-bottom: 1px solid #ededed;
   min-height: 64px;
   line-height: normal;
-  font-size: 11px;
+  /*font-size: 11px;*/
   line-height: 11px;
   margin-top: -1px;
 }
@@ -1050,9 +1099,9 @@ input[type="color"]:focus,
   margin-right: 10px;
   *margin-right: 10px;
   line-height: 20px;
-  -webkit-border-radius: 0px;
-     -moz-border-radius: 0px;
-          border-radius: 0px;
+  -webkit-border-radius: 4px;
+     -moz-border-radius: 4px;
+          border-radius: 4px;
   -webkit-transition: color 0.25s linear, background-color 0.25s linear;
      -moz-transition: color 0.25s linear, background-color 0.25s linear;
        -o-transition: color 0.25s linear, background-color 0.25s linear;
@@ -1071,8 +1120,8 @@ input[type="color"]:focus,
 .btn.disabled,
 .btn[disabled] {
   color: #fff;
-  background-color: #649CBC;
-  *background-color: #649CBC;
+  background-color: #989898;
+  *background-color: #989898;
   border: 0px;
 }
 
@@ -1110,7 +1159,7 @@ input[type="color"]:focus,
 .btn-large {
   padding: 11px 19px;
   font-size: 17.5px;
-  border-radius: 0px;
+  border-radius: 6px;
 }
 
 .btn-large [class^="icon-"],
@@ -1651,7 +1700,9 @@ input[type="color"]:focus,
   *border: 1px solid #ededed;
   border-radius: 0px;
 }
-
+.modal.fade.in {
+  top: 80px !important;
+}
 .modal-header {
   border-bottom: 1px solid #ededed;
 }

@@ -8,6 +8,7 @@
  *   A keyed array containing the current state of the form.
  */
 function skeleton_form_system_theme_settings_alter(&$form, &$form_state, $form_id = NULL)  {
+  //TODO: Check this
   // Work-around for a core bug affecting admin themes. See issue #943212.
   if (isset($form_id)) {
     return;
@@ -58,6 +59,14 @@ function skeleton_form_system_theme_settings_alter(&$form, &$form_state, $form_i
   	'#collapsible' => TRUE,
 		'#collapsed' => FALSE,
 	);
+	$form['settings']['general']['layout_version'] = array(
+		'#type' => 'select',
+		'#title' => t('Layout Version'),
+		'#options' => array('wide' => 'Wide', 'boxed' => 'Boxed'),
+		'#default_value' => theme_get_setting('layout_version'),
+		'#description' => t('Set the layout version of your theme.'),
+	);
+
 	$form['settings']['general']['theme_color'] = array(
 		'#type' => 'select',
 		'#title' => t('Theme Color'),
