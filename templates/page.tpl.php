@@ -36,7 +36,7 @@
 			<div class="mobile-menu-trigger close-menu">
 				<i class="fa fa-times" aria-hidden="true"></i>
 			</div>
-			<?php if ($primary_nav): print render($primary_nav); endif; ?>
+			<?php if ($mobile_nav): print render($mobile_nav); endif; ?>
 		</div>
 		<!-- End of Mobile Main menu -->
 

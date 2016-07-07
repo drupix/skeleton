@@ -111,8 +111,10 @@ function skeleton_preprocess_page(&$variables, $hook) {
 
   /**** Creating the main menu and secondary tree ****/
   $variables['primary_nav'] = FALSE;
+  $variables['mobile_nav'] = FALSE;
 	if ($variables['main_menu']) {
 		$variables['primary_nav'] = menu_tree(variable_get('menu_main_links_source', 'main-menu'));
+		$variables['mobile_nav'] = menu_tree(variable_get('menu_main_links_source', 'main-menu'));
 	}
 
 	$variables['secondary_nav'] = FALSE;
