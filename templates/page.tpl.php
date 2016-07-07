@@ -29,7 +29,6 @@
         </div>
       </div>
     <?php endif; ?>
-
     <!-- End of Header region -->
 
 		<!-- Mobile Main menu -->
