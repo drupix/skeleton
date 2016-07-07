@@ -71,6 +71,7 @@
 	  display: block;
 	}
   #nav {
+    display: none;
     margin-top: 43px;
     margin-bottom: 5px;
   }

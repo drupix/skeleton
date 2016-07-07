@@ -122,7 +122,7 @@
 
     <?php if ($page['highlighted']) : ?>
       <div id="highlighted-region">
-        <div class="row-fluid wrapper">
+        <div class="row-fluid">
           <div class="span12">
             <?php print render($page['highlighted']); ?>
           </div>
