@@ -63,7 +63,9 @@
   /*************************************/
   /********** Main navigation **********/
   /*************************************/
-  
+  .mobile-menu-trigger {
+    display: block;
+  }
   #nav {
     margin-top: 43px;
     margin-bottom: 5px;
@@ -74,7 +76,8 @@
   }
    
   .navbar .brand {
-    display: block;
+/*     display: block; */
+    display: none;
     padding-left: 0px;
     padding-right: 0px;
     margin: 0px 0px 0px 0px;

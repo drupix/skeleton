@@ -32,14 +32,25 @@
 
     <!-- End of Header region -->
 
+		<!-- Mobile Main menu -->
+		<div id="nav-mobile" class="">
+			<div class="mobile-menu-trigger close-menu">
+				<i class="fa fa-times" aria-hidden="true"></i>
+			</div>
+			<?php if ($primary_nav): print render($primary_nav); endif; ?>
+		</div>
+		<!-- End of Mobile Main menu -->
+
     <header class="header" id="header">
 
       <div class="content-wrapper">
         <div class="row-fluid wrapper">
-
           <!-- Logo or Site name section -->
       	  <div id="logo" class="span3">
-      		  <?php if ($logo) : ?>
+
+      	  <div class="mobile-menu-trigger"><i class="fa fa-bars" aria-hidden="true"></i></div>
+
+      	  <?php if ($logo) : ?>
             	<a href="<?php print $front_page; ?>"><img src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>" class="logo" /></a>
             <?php elseif ($site_name) : ?>
             	<a href="<?php print $front_page; ?>" id="site-name"><h1><?php print $site_name; ?></h1></a>
@@ -79,22 +90,27 @@
       <div id="top-content-region">
         <div class="row-fluid wrapper">
 
-          <!-- Top content left region -->
+          <?php $span_size = ($page['top_content_left'] || $breadcrumb_position === "left") && !($page['top_content_right'] || $breadcrumb_position === "right") ? 'span12' : 'span6'; ?>
+          <?php $span_size = ($page['top_content_right'] || $breadcrumb_position === "right") ? 'span6' : $span_size; ?>
 
-          <div id="top-content-left-region" class="span6 text-center-responsive">
-            <?php if($breadcrumb_position === "left") { print $breadcrumb; } ?>
-            <?php if($page['top_content_left']) { print render($page['top_content_left']); } ?>
-          </div>
+          <!-- Top content left region -->
+          <?php if($page['top_content_left'] || ($breadcrumb_position === "left")) : ?>
+            <div id="top-content-left-region" class="<?php print $span_size; ?> text-center-responsive">
+              <?php if($breadcrumb_position === "left") { print $breadcrumb; } ?>
+              <?php if($page['top_content_left']) { print render($page['top_content_left']); } ?>
+            </div>
+          <?php endif; ?>
           <!-- End of top content left region -->
 
           <!-- Top content right region -->
-
-          <div id="top-content-right-region" class="span6 text-right text-center-responsive">
-            <?php if($breadcrumb_position === "right") { print $breadcrumb; } ?>
-            <?php if($page['top_content_right']) { print render($page['top_content_right']); } ?>
-          </div>
-
+          <?php if($page['top_content_right'] || ($breadcrumb_position === "right")) : ?>
+            <div id="top-content-right-region" class="<?php print $span_size; ?> text-right text-center-responsive">
+              <?php if($breadcrumb_position === "right") { print $breadcrumb; } ?>
+              <?php if($page['top_content_right']) { print render($page['top_content_right']); } ?>
+            </div>
+          <?php endif; ?>
           <!-- End of top content right region -->
+
 
         </div>
       </div>

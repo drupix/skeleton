@@ -6,20 +6,20 @@
 
 .block-title:before,
 .block-title-small:before {
-  color: tomato;
+  color: #555555;
 }
 
 .textcolor {
-  color: tomato;
+  color: #555555;
 }
 
 /* Blockquotes */
 blockquote {
-   border-left: 1px solid tomato;
+   border-left: 1px solid #555555;
 }
 
 blockquote.pull-right {
-   border-right: 1px solid tomato;
+   border-right: 1px solid #555555;
 }
 
 
@@ -34,11 +34,11 @@ blockquote.pull-right {
 /***********************************************************************************/
 
 a {
-  color: tomato;
+  color: #555555;
 }
 
 li a.active {
-  color: tomato;
+  color: #555555;
 }
 
 
@@ -58,7 +58,7 @@ li a.active {
 
 #footer-four-columns a:hover,
 #footer-four-columns a:focus {
-  color: tomato;
+  color: #555555;
 }
 
 
@@ -69,7 +69,7 @@ li a.active {
 
 footer a:hover,
 footer a:focus {
-  color: tomato;
+  color: #555555;
 }
 
 
@@ -84,48 +84,56 @@ footer a:focus {
 /**********************************************************************************/
 
 /*************************************/
+/****** Mobile Main navigation *******/
+/*************************************/
+#nav-mobile li a:hover,
+#nav-mobile li a:focus {
+  color: #555555;
+}
+
+/*************************************/
 /********** Main navigation **********/
 /*************************************/
 
 .navbar .nav > li > a:hover,
 .navbar .nav > li > a:focus {
-  color: tomato;
-  border-bottom: 1px solid tomato;
+  color: #555555;
+  border-bottom: 1px solid #555555;
 }
 
 .navbar .nav > .active > a,
 .navbar .nav > .active > a:hover,
 .navbar .nav > .active > a:focus {
-  color: tomato;
-  border-bottom: 1px solid tomato;
+  color: #555555;
+  border-bottom: 1px solid #555555;
 }
 
 /* Dropdown menu */
 li.dropdown:hover > a {
-  color: tomato;
+  color: #555555;
 }
 
 .dropdown-menu {
-  border-top: 1px solid tomato;
+  border-top: 1px solid #555555;
 }
 
 .dropdown-menu > li > a:hover,
 .dropdown-menu > li > a:focus,
 .dropdown-submenu:hover > a,
 .dropdown-submenu:focus > a {
-  color: tomato;
+  color: #555555;
 }
 
 .dropdown-menu > .active > a,
 .dropdown-menu > .active > a:hover,
 .dropdown-menu > .active > a:focus {
-  color: tomato;
+  color: #555555;
 }
 
 .navbar .nav li.dropdown.open > .dropdown-toggle,
 .navbar .nav li.dropdown.active > .dropdown-toggle,
 .navbar .nav li.dropdown.open.active > .dropdown-toggle {
-  color: tomato;
+  color: #555555;
 }
 
 
@@ -139,7 +147,7 @@ li.dropdown:hover > a {
 .nav-pills > .active > a,
 .nav-pills > .active > a:hover,
 .nav-pills > .active > a:focus {
-  color: tomato;
+  color: #555555;
 }
 
 
@@ -158,7 +166,7 @@ li.dropdown:hover > a {
 /*************************************/
 
 .theme-default .nivo-controlNav a.active {
-  color: tomato;
+  color: #555555;
 }
 
 
@@ -168,7 +176,7 @@ li.dropdown:hover > a {
 /*************************************/
 
 .sequence-preloader .preloading .circle {
-    fill: tomato;
+    fill: #555555;
 }
 
 
@@ -183,17 +191,17 @@ li.dropdown:hover > a {
 /*********************************************************************************/
 
 .portfolio-item:hover .portfolio-title {
-  border-bottom: 1px solid tomato;
+  border-bottom: 1px solid #555555;
 }
 
 .portfolio-item .portfolio-title a:hover {
-  color: tomato;
+  color: #555555;
 }
 
 /* Portfolio Block Version 2 */
 
 .portfolio-block-2 .portfolio2-item a {
-  background: tomato;
+  background: #555555;
 }
 
 
@@ -213,37 +221,37 @@ li.dropdown:hover > a {
 
 /* Panels Version 1 */
 .panel .panel-icon .icon {
-  box-shadow: 0 0 0 2px tomato;
+  box-shadow: 0 0 0 2px #555555;
 }
 
 .panel .panel-icon .icon:after {
-  background: tomato;
+  background: #555555;
 }
 
 .panel:hover .panel-icon .icon {
-  color: tomato;
+  color: #555555;
 }
 
 .panel:hover .panel-info h3 {
-   color: tomato;
+   color: #555555;
 }
 
 /* Panels Version 2 */
 
 .panel-2:hover h4 {
-  color: tomato;
+  color: #555555;
 }
 
 .panel-2 .panel-icon {
-  box-shadow: 0 0 0 1px tomato;
+  box-shadow: 0 0 0 1px #555555;
 }
 
 .panel-2 .panel-icon:after {
-  background: tomato;
+  background: #555555;
 }
 
 .panel-2:hover .panel-icon {
-  color: tomato;
+  color: #555555;
 }
 
 
@@ -253,7 +261,7 @@ li.dropdown:hover > a {
 /****************************/
 
 #testimonials blockquote i {
-  color: tomato;
+  color: #555555;
 }
 
 
@@ -264,7 +272,7 @@ li.dropdown:hover > a {
 
 #social-widget-footer a:hover,
 #social-widget-header a:hover {
-  color: tomato;
+  color: #555555;
 }
 
 
@@ -275,7 +283,7 @@ li.dropdown:hover > a {
 
 /* modal user login */
 #myLoginModal a {
-  color: tomato;
+  color: #555555;
 }
 
 
@@ -295,7 +303,7 @@ li.dropdown:hover > a {
 
 .carousel-arrows .carousel-arrow-left:hover,
 .carousel-arrows .carousel-arrow-right:hover {
-  color: tomato;
+  color: #555555;
 }
 
 
@@ -304,43 +312,9 @@ li.dropdown:hover > a {
 /********** Buttons **********/
 /*****************************/
 
-.btn {
-  color: #fff;
-  background-color: tomato;
-  *background-color: tomato;
-}
-
-.btn:hover,
-.btn:focus,
-.btn:active,
-.btn.active,
-.btn.disabled,
-.btn[disabled] {
-  color: #fff;
-  background-color: coral;
-  *background-color: coral;
-}
-
-/* Buttons styles */
-.btn-light {
-  color: #fff;
-  background-color: darksalmon;
-  *background-color: darksalmon;
-}
-
-.btn-light:hover,
-.btn-light:focus,
-.btn-light:active,
-.btn-light.active,
-.btn-light.disabled,
-.btn-light[disabled] {
-  color: #fff;
-  background-color: lightsalmon;
-  *background-color: lightsalmon;
-}
 .btn-primary {
-  background-color: tomato;
-  *background-color: tomato;
+  background-color: #555555;
+  *background-color: #555555;
 }
 
 .btn-primary:hover,
@@ -349,12 +323,12 @@ li.dropdown:hover > a {
 .btn-primary.active,
 .btn-primary.disabled,
 .btn-primary[disabled] {
-  background-color: coral;
-  *background-color: coral;
+  background-color: #888;
+  *background-color: #888;
 }
 
 .btn-link {
-  color: tomato;
+  color: #555555;
 }
 
 
@@ -366,28 +340,28 @@ li.dropdown:hover > a {
 .nav-tabs > .active > a,
 .nav-tabs > .active > a:hover,
 .nav-tabs > .active > a:focus {
-  border-top: 1px solid tomato;
+  border-top: 1px solid #555555;
 }
 
 /* Left Tabs */
 .tabs-left > .nav-tabs > .active > a,
 .tabs-left > .nav-tabs > .active > a:hover,
 .tabs-left > .nav-tabs > .active > a:focus {
-  border-left: 1px solid tomato;
+  border-left: 1px solid #555555;
 }
 
 /* Right Tabs */
 .tabs-right > .nav-tabs > .active > a,
 .tabs-right > .nav-tabs > .active > a:hover,
 .tabs-right > .nav-tabs > .active > a:focus {
-  border-right: 1px solid tomato;
+  border-right: 1px solid #555555;
 }
 
 /* Below Tabs */
 .tabs-below > .nav-tabs > .active > a,
 .tabs-below > .nav-tabs > .active > a:hover,
 .tabs-below > .nav-tabs > .active > a:focus {
-  border-bottom: 1px solid tomato;
+  border-bottom: 1px solid #555555;
 }
 
 
@@ -398,20 +372,20 @@ li.dropdown:hover > a {
 /**************************************/
 
 .progress .bar {
-  background-color: tomato;
+  background-color: #555555;
 }
 
 .progress-striped .bar {
-  background-color: tomato;
+  background-color: #555555;
 }
 
 /* Wells */
 .well blockquote {
-  border-color: tomato;
+  border-color: #555555;
 }
 
 .well blockquote.pull-right {
-  border-color: tomato;
+  border-color: #555555;
 }
 
 
@@ -421,21 +395,9 @@ li.dropdown:hover > a {
 /**********************************/
 
 .team-social a:hover {
-  color: tomato;
+  color: #555555;
 }
 
-/**********************************/
-/***********  Minishop  ***********/
-/**********************************/
-#header-region .minishop-cart-checkout-button a.btn:hover,
-#header-region .minishop-cart-checkout-button a.btn:focus,
-#header-region .minishop-cart-checkout-button a.btn:active,
-#header-region .minishop-cart-checkout-button a.btn.active,
-#header-region .minishop-cart-checkout-button a.btn.disabled,
-#header-region .minishop-cart-checkout-button a.btn[disabled] {
-  background-color: coral !important;
-  *background-color: coral !important;
-}
 
 
 
@@ -449,11 +411,11 @@ li.dropdown:hover > a {
 
 /* Background colors */
 
-.bg-color-theme { background-color: tomato; }
+.bg-color-theme { background-color: #555555; }
 
 /* Text colors */
 
-.text-color-theme { color: tomato; }
+.text-color-theme { color: #555555; }
 
 
 
@@ -473,7 +435,7 @@ li.dropdown:hover > a {
   /*************************************/
   
   .navbar .brand {
-    border-bottom: 2px solid tomato;
+    border-bottom: 2px solid #555555;
   }
   
   /* Dropdown menu */
@@ -483,13 +445,13 @@ li.dropdown:hover > a {
   .nav-collapse .nav > li > a:focus,
   .nav-collapse .dropdown-menu a:hover,
   .nav-collapse .dropdown-menu a:focus {
-    color: tomato;
+    color: #555555;
   }
   
   .navbar .nav > .active > a,
   .navbar .nav > .active > a:hover,
   .navbar .nav > .active > a:focus {
-    color: tomato;
+    color: #555555;
   }
 
 

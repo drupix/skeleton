@@ -84,7 +84,7 @@ function skeleton_preprocess_html(&$variables, $hook) {
   drupal_add_js(array("settings" => $settings), 'setting');
 
   // external javascript for google maps
-  if(!module_exists('gmap')) {
+  if(arg(0)=='contact') {
     drupal_add_js('http://maps.google.com/maps/api/js?sensor=false&language=' . $language->language, 'external');
   }
 
@@ -176,8 +176,6 @@ function skeleton_preprocess_page(&$variables, $hook) {
 //* -- Delete this line if you want to use this function
 function skeleton_preprocess_node(&$variables, $hook) {
   //$variables['sample_variable'] = t('Lorem ipsum.');
-
-
 
   $node = $variables['node'];
   $variables['date'] = format_date($node->created);
@@ -338,6 +336,10 @@ function skeleton_breadcrumb($variables) {
   $breadcrumb = $variables['breadcrumb'];
   $display = theme_get_setting('breadcrumb_display');
   $delimiter = theme_get_setting('breadcrumb_separator');
+  $page_title = theme_get_setting('breadcrumb_title');
+  if($page_title) {
+    $breadcrumb[]= drupal_get_title();
+  }
 
   $output = "";
 

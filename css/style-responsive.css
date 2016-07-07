@@ -67,7 +67,9 @@
   /*************************************/
   /********** Main navigation **********/
   /*************************************/
-  
+	.mobile-menu-trigger {
+	  display: block;
+	}
   #nav {
     margin-top: 43px;
     margin-bottom: 5px;
@@ -78,7 +80,8 @@
   }
    
   .navbar .brand {
-    display: block;
+/*     display: block; */
+    display: none;
     padding-left: 0px;
     padding-right: 0px;
     margin: 0px 0px 0px 0px;
@@ -151,6 +154,7 @@
   }
    
   /* Dropdown hover */
+  #nav-mobile .nav li.dropdown > ul.dropdown-menu,
   .navbar .nav li.dropdown > ul.dropdown-menu {
     visibility: visible;
     -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
@@ -318,11 +322,6 @@
   }
   /* End of logo resizing problem reset */
    
-  #logo {
-    text-align: center;
-    padding: 0px;
-  }
-   
   #site-name h1 {
     font-size: 36px;
   }
@@ -462,7 +461,10 @@
     margin-left: -120px;
   }
 
-
+  #logo {
+    text-align: center;
+    padding: 0px;
+  }
 
 
 

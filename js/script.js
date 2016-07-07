@@ -15,8 +15,24 @@
   //To understand behaviors, see https://drupal.org/node/756722#behaviors
   Drupal.behaviors.skeleton_custom = {
    attach: function(context, settings) {
-  
+
      // Place your code here.
+     
+     // Mobile Main Menu
+     $('#nav-mobile ul.dropdown-menu').removeClass('dropdown-menu');
+     
+     $('.mobile-menu-trigger').click(function() {
+       if( $('#nav-mobile').hasClass('active') ) {
+         $('#nav-mobile').removeClass('active');
+         $('#main-wrapper').removeClass('mobile-menu-active');
+       }
+       else {
+         $('#nav-mobile').addClass('active');
+         $('#main-wrapper').addClass('mobile-menu-active');
+       }
+     });
+     // END Mobile Main Menu
+     
      $('.clickable-row').each( function() {
        if ($(this).find('a').length) { 
          $(this).click(function() {
@@ -210,14 +226,14 @@ jQuery(window).load(function() {
     $("#myLoginModal").appendTo("body");
 
     // popovers
-    $('.popovers').popover({
-      container: 'body'
-    });
+//    $('.popovers').popover({
+//      container: 'body'
+//    });
     
     // tooltips
-    $('.tooltips').tooltip({
-      container: 'body'
-    });
+//    $('.tooltips').tooltip({
+//      container: 'body'
+//    });
   
   });
 
