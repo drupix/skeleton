@@ -53,11 +53,7 @@
   }
   /* End of the previous mentioned two classes */
   
-  
-  
-  
-  
-  
+
   /**********************************************************************************/
   /**********************************************************************************/
   /************************************** Menu **************************************/
@@ -166,7 +162,6 @@
   
   
   
-  
     
   /********************************************************************************/
   /********************************************************************************/
@@ -204,11 +199,24 @@
   /********************************** General styles **********************************/
   /************************************************************************************/
   /************************************************************************************/
-
-  body {
-    padding: 0px;
+  #admin-menu {
+    display: none;
   }
 
+  body {
+    background-color: #ffffff;
+    padding: 0;
+  }
+  body.admin-menu {
+    margin-top: 0px !important;
+    padding-top: 10px;
+  }
+  
+	.admin-menu #nav-mobile {
+    margin-top: -10px;
+    padding-top: 10px;
+	}
+	
   .row-fluid .mobile-two {
     width: 50%;
     float: left;
@@ -323,12 +331,21 @@
   }
   /* End of logo resizing problem reset */
    
+  #logo {
+    text-align: center;
+    padding: 0px;
+  }
+  #logo img {
+    max-height: 96px;
+  }
+  
   #site-name h1 {
     font-size: 36px;
   }
 
-
-
+  .nivo-caption {
+    position: relative;
+  }
 
 
 
@@ -462,10 +479,6 @@
     margin-left: -120px;
   }
 
-  #logo {
-    text-align: center;
-    padding: 0px;
-  }
 
 
 

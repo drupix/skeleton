@@ -151,6 +151,7 @@
   }
    
   /* Dropdown hover */
+  .navbar .nav li.dropdown > ul.dropdown-menu,
   .navbar .nav li.dropdown > ul.dropdown-menu {
     visibility: visible;
     -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
@@ -162,7 +163,6 @@
   
   
   
-    
   /********************************************************************************/
   /********************************************************************************/
   /************************************ Blocks ************************************/
@@ -199,11 +199,24 @@
   /********************************** General styles **********************************/
   /************************************************************************************/
   /************************************************************************************/
-
-  body {
-    padding: 0px;
+  #admin-menu {
+    display: none;
   }
 
+  body {
+    background-color: #ffffff;
+    padding: 0;
+  }
+  body.admin-menu {
+    margin-top: 0px !important;
+    padding-top: 10px;
+  }
+  
+  .admin-menu #nav-mobile {
+    margin-top: -10px;
+    padding-top: 10px;
+  }
+  
   .row-fluid .mobile-two {
     width: 50%;
     float: left;
@@ -325,12 +338,6 @@
   #logo img {
     max-height: 96px;
   }
-  
-  /*
-  .logged-in #top-page {
-      margin-top: 60px;
-  }
-  */
 
   #site-name h1 {
     font-size: 36px;

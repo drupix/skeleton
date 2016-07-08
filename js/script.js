@@ -32,17 +32,7 @@
        }
      });
      // END Mobile Main Menu
-     
-     $('.clickable-row').each( function() {
-       if ($(this).find('a').length) { 
-         $(this).click(function() {
-             window.location=$(this).find('a').attr('href');
-             return false;
-         });
-       }
-     });
 
-     //$('.front.not-logged-in .login-block-link').addClass('btn btn-large');
      $('.front.not-logged-in .form-submit').addClass('btn');
      
      $('.checkout-login').click(function() {
@@ -231,9 +221,9 @@ jQuery(window).load(function() {
 //    });
     
     // tooltips
-//    $('.tooltips').tooltip({
-//      container: 'body'
-//    });
+    $('.tooltips').tooltip({
+      container: 'body'
+    });
   
   });
 
