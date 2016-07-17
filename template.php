@@ -67,6 +67,7 @@ function skeleton_preprocess_html(&$variables, $hook) {
   }
 
   // passing variables to the javascript files
+  $google_apikey      = theme_get_setting('gmap_api_key');
   $google_latitude    = theme_get_setting('latitude');
   $google_longitude   = theme_get_setting('longitude');
   $google_zoom        = theme_get_setting('google_zoom');
@@ -85,7 +86,11 @@ function skeleton_preprocess_html(&$variables, $hook) {
 
   // external javascript for google maps
   if(arg(0)=='contact') {
-    drupal_add_js('http://maps.google.com/maps/api/js?sensor=false&language=' . $language->language, 'external');
+  	$apikey_str = '';
+  	if($google_apikey) {
+  		$apikey_str = '&key=' . $google_apikey;
+  	}
+    drupal_add_js('http://maps.google.com/maps/api/js?sensor=false&language=' . $language->language . $apikey_str, 'external');
   }
 
 }

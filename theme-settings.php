@@ -185,6 +185,14 @@ function skeleton_form_system_theme_settings_alter(&$form, &$form_state, $form_i
 		'#collapsed' => FALSE,
 	);
 
+	$form['settings']['google_maps']['gmap_api_key'] = array(
+			'#type' => 'textfield',
+			'#title' => t('Google Maps API Key'),
+			'#default_value' => theme_get_setting('gmap_api_key'),
+			'#size' => 50,
+			'#maxlength' => 50,
+	);
+
 	$form['settings']['google_maps']['latitude'] = array(
 		'#type' => 'textfield',
 		'#title' => t('Latitude'),
