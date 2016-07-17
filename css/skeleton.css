@@ -21,7 +21,7 @@
 /************************************************************************************/
 /************************************************************************************/
 body {
-  background-color: #EEEEEE;
+  background-color: #000000;
   color: #555555;
   font-family: 'Trebuchet MS',Geneva,sans-serif !important;
   /*font-size: 12px;*/
@@ -34,7 +34,7 @@ body.admin-menu {
   margin-top: 30px !important;
 }
 #main-wrapper {
-  background-color: white;
+  background-color: #FFFFFF;
 }
 .boxed-version {
   box-shadow: 0 0 6px -1px rgba(0, 0, 0, 0.3);
