@@ -216,9 +216,9 @@ jQuery(window).load(function() {
     $("#myLoginModal").appendTo("body");
 
     // popovers
-//    $('.popovers').popover({
-//      container: 'body'
-//    });
+    $('.popovers').popover({
+      container: 'body'
+    });
     
     // tooltips
     $('.tooltips').tooltip({
