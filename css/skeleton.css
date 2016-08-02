@@ -26,6 +26,9 @@ body {
   font-family: 'Trebuchet MS',Geneva,sans-serif !important;
   /*font-size: 12px;*/
 }
+body.boxed {
+  background-color: #ececec;
+}
 body.cke_show_borders {
   background-color: #FFFFFF;
 }
