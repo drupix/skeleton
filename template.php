@@ -199,7 +199,7 @@ function skeleton_preprocess_node(&$variables, $hook) {
     $user = theme('username', array('account' => $node));
 
     $variables['submitted'] = '<ul class="submitted">';
-    $variables['submitted'] .= '<li><i class="icon-calendar-empty"></i> ' . $date . '</li>';
+    $variables['submitted'] .= '<li><i class="icon-calendar"></i> ' . $date . '</li>';
     $variables['submitted'] .= '<li><i class="icon-user"></i> ' . $user . '</li>';
 
     if (!empty($node->{'field_tags'})) {
