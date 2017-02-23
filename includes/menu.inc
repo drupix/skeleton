@@ -57,7 +57,7 @@ function skeleton_menu_link__main_menu(array $variables) {
        //$options['attributes']['data-toggle'][] = 'dropdown';
        //$options['attributes']['data-target'][] = '#';
        $options['html'] = TRUE;
-       $element['#title'] .= '<i class="icon-angle-down"></i>';
+       $element['#title'] .= '<i class="fa fa-angle-down"></i>';
     }
     elseif ($link['depth'] > 1) {
        $attributes['class'][] = 'dropdown-submenu';

@@ -10,7 +10,7 @@
 // wrapping it with an "anonymous closure". See:
 // - https://drupal.org/node/1446420
 // - http://www.adequatelygood.com/2010/3/JavaScript-Module-Pattern-In-Depth
-(function ($, Drupal, window, document, undefined) {
+(function ($, Drupal) {
   
   //To understand behaviors, see https://drupal.org/node/756722#behaviors
   Drupal.behaviors.skeleton_custom = {
@@ -46,12 +46,12 @@
    }
   };
 
-})(jQuery, Drupal, this, this.document);
+})(jQuery, Drupal);
 
 
 
 //Top-page (menu) position
-(function($) {
+(function($, Drupal) {
 
   function isEmpty( el ){
     return !$.trim(el.html())
@@ -102,10 +102,10 @@
     $.setPagePosition();
   });
 
-})(jQuery);
+})(jQuery, Drupal);
 
 //References and work isotope
-(function($) {
+(function($, Drupal) {
 
   $(window).load(function() {
     
@@ -132,7 +132,7 @@
 
   });
 
-})(jQuery);
+})(jQuery, Drupal);
 
 
 
@@ -198,7 +198,7 @@ jQuery(window).load(function() {
 
 
 //Features
-(function ($) {
+(function ($, Drupal) {
 
   $(document).ready(function() {
     
@@ -227,5 +227,5 @@ jQuery(window).load(function() {
   
   });
 
-})(jQuery);
+})(jQuery, Drupal);
 

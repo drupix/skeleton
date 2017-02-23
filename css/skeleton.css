@@ -2141,6 +2141,13 @@ p img {
   padding-bottom: 0px;
 }
 
+.node-sticky.node-teaser {
+  background: rgba(0, 0, 0, 0.024) none repeat scroll 0 0;
+  border: 1px solid #d3d7d9;
+  margin-bottom: 5px;
+  padding: 15px;
+}
+
 .node-submitted-teaser {
   border-bottom: 1px solid #ededed;
   margin-top: 5px;
