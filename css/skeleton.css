@@ -678,7 +678,7 @@ footer .block a:hover {
   padding: 0;
   position: fixed;
   width: 240px;
-  z-index: 99;
+  z-index: 999;
   
           transition: all 0.5s ease-in-out;
   -webkit-transition: all 0.5s ease-in-out; /** Chrome & Safari **/
