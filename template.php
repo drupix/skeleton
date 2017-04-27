@@ -4,7 +4,6 @@ $theme_path = drupal_get_path('theme', 'skeleton');
 require_once $theme_path . '/includes/menu.inc'; //This include is important to add desired classes to the menus
 require_once $theme_path . '/includes/fields.inc';
 
-
 /**
  * @file
  * Contains the theme's functions to manipulate Drupal's default markup.
