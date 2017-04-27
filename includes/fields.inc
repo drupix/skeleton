@@ -5,9 +5,9 @@ function skeleton_node_tags($node) {
    $category = '';
    if (!empty($node->{'field_tags'}[LANGUAGE_NONE])) {
       foreach ($node->{'field_tags'}[LANGUAGE_NONE] as $item) {
-         $term = taxonomy_term_load($item['tid']);
+         $term = taxonomy_term_load($item['target_id']);
          if ($term) {
-           $category_arr[] = l($term->name, 'taxonomy/term/' . $item['tid']);
+           $category_arr[] = l($term->name, 'taxonomy/term/' . $item['target_id']);
          }
       }
    }

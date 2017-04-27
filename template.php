@@ -90,7 +90,8 @@ function skeleton_preprocess_html(&$variables, $hook) {
   	if($google_apikey) {
   		$apikey_str = '&key=' . $google_apikey;
   	}
-    drupal_add_js('http://maps.google.com/maps/api/js?sensor=false&language=' . $language->language . $apikey_str, 'external');
+    //drupal_add_js('http://maps.google.com/maps/api/js?sensor=false&language=' . $language->language . $apikey_str, 'external');
+    drupal_add_js('http://maps.google.com/maps/api/js?&language=' . $language->language . $apikey_str, 'external');
   }
 
 }
