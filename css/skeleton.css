@@ -4,7 +4,6 @@
 /************************************************************************************/
 /************************************************************************************/
 
-
 #maintenance-page {
   background-color: #fff;
   font-family: 'Open Sans';
@@ -377,7 +376,7 @@ footer {
   position: fixed;
   top: 0;
   width: 100%;
-  z-index: 9;
+  z-index: 10;
 }
 .boxed-version #top-page.fixed {
   max-width: 1170px;
@@ -2123,6 +2122,49 @@ input[type="color"]:focus,
 p img {
   height: auto !important;
   max-width: 100% !important;
+}
+
+.circular-square {
+  -webkit-border-radius: 50%;
+     -moz-border-radius: 50%;
+          border-radius: 50%;
+  
+/*   -webkit-box-shadow: 0px 0px 5px 6px #48b3b3; */
+/*      -moz-box-shadow: 0px 0px 5px 6px #48b3b3; */
+/*           box-shadow: 0px 0px 5px 6px #48b3b3; */
+          
+  -webkit-box-shadow: 0px 0px 5px 6px #f78935;
+     -moz-box-shadow: 0px 0px 5px 6px #f78935;
+          box-shadow: 0px 0px 5px 6px #f78935;
+}
+.circular-landscape {
+  -webkit-border-radius: 50%;
+     -moz-border-radius: 50%;
+          border-radius: 50%;
+  display: inline-block;
+  position: relative;
+  width: 200px;
+  height: 200px;
+  overflow: hidden;
+}
+
+.circular-landscape img {
+  width: auto;
+  height: 100%;
+  margin-left: -50px;
+}
+.circular-portrait {
+  -webkit-border-radius: 50%;
+     -moz-border-radius: 50%;
+          border-radius: 50%;
+  position: relative;
+  width: 200px;
+  height: 200px;
+  overflow: hidden;
+}
+.circular-portrait img {
+  width: 100%;
+  height: auto;
 }
 
 
