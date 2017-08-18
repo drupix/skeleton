@@ -15,15 +15,15 @@
 
     <!-- Header region -->
 
-    <?php if ($page['header-left'] || $page['header-right']) : ?>
+    <?php if ($page['header_left'] || $page['header_right']) : ?>
       <div id="header-region">
         <div class="content-wrapper">
           <div class="row-fluid wrapper">
             <div class="span6">
-              <?php if ($page['header-left']) { print render($page['header-left']); } ?>
+              <?php if ($page['header_left']) { print render($page['header_left']); } ?>
             </div>
             <div class="span6 text-right text-center-responsive">
-              <?php if ($page['header-right']) { print render($page['header-right']); } ?>
+              <?php if ($page['header_right']) { print render($page['header_right']); } ?>
             </div>
           </div>
         </div>

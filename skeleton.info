@@ -38,8 +38,8 @@ scripts[] = js/script.js
 ; And you'll use this variable in maintenance-page.tpl.php:
 ;   <?php print $header_top; ?>
 
-regions[header-left]         = Header left
-regions[header-right]        = Header right
+regions[header_left]         = Header left
+regions[header_right]        = Header right
 regions[highlighted]         = Highlighted
 regions[help]                = Help
 

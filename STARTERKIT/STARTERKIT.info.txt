@@ -17,8 +17,8 @@ stylesheets[all][] = css/style.css
 
 ; Regions
 
-regions[header-left]         = Header left
-regions[header-right]        = Header right
+regions[header_left]         = Header left
+regions[header_right]        = Header right
 regions[highlighted]         = Highlighted
 regions[help]                = Help
 
