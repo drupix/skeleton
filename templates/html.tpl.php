@@ -49,7 +49,12 @@
 <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<?php print $head; ?>
-	<title><?php print $head_title; ?></title>
+	<!-- <title><?php //print $head_title; ?></title>  -->
+	<?php
+    if (strpos(drupal_get_html_head(), '<title>') === false) {
+        print '<title>' . $head_title . '</title>';
+    }
+	?>
 	<!--[if lte IE 8]>
 	<script src="/sites/all/themes/specialone/js/excanvas.js"></script>
   <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
