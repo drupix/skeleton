@@ -38,19 +38,7 @@ function SKELETON_preprocess_maintenance_page(&$variables, $hook) {
  */
 /* -- Delete this line if you want to use this function
 function SKELETON_preprocess_html(&$variables, $hook) {
-
-  global $language;
-
-  // Add the color css
-  $path = path_to_theme();
-  $color = theme_get_setting('theme_color');
-
-  // The body tag's classes are controlled by the $classes_array variable. To
-  // remove a class from $classes_array, use array_diff().
-  //$variables['classes_array'] = array_diff($variables['classes_array'], array('class-to-remove'));
-  drupal_add_css($path . '/css/colors/' . $color . '.css', array('group' => CSS_THEME, 'type' => 'file', 'id' => 'themeColor'));
-  drupal_add_css($path . '/css/style-responsive.css', array('group' => CSS_THEME, 'type' => 'file'));
-
+  //$variables['sample_variable'] = t('Lorem ipsum.');
 }
 // */
 

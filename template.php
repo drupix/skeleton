@@ -42,20 +42,33 @@ function skeleton_preprocess_maintenance_page(&$variables, $hook) {
 //* -- Delete this line if you want to use this function
 function skeleton_preprocess_html(&$variables, $hook) {
   global $language;
+  global $custom_theme, $theme, $user;
 
   $fixed_header = theme_get_setting('fixed_header');
   if ($fixed_header == 'yes') {
     $variables['classes_array'][] = 'fixed-header';
   }
 
+  if (!empty($user->theme)) {
+  	$current_theme = $user->theme;
+  }
+  elseif (!empty($custom_theme)) {
+  	$current_theme = $custom_theme;
+  }
+  else {
+  	$current_theme = $theme ? $theme : variable_get('theme_default', 'garland');
+  }
+  
   $color = theme_get_setting('theme_color');
   $layout_version = theme_get_setting('layout_version');
 
-  if ($GLOBALS['theme'] == 'skeleton') {
+  //if ($GLOBALS['theme'] == 'skeleton') {
 
     /**** Add the color css ****/
-    $path = path_to_theme();
-    $color = theme_get_setting('theme_color');
+    //$path = path_to_theme();
+  	//$color = theme_get_setting('theme_color');
+  	$path = drupal_get_path('theme', $current_theme);
+    
 
     // The body tag's classes are controlled by the $classes_array variable. To
     // remove a class from $classes_array, use array_diff().
@@ -63,7 +76,7 @@ function skeleton_preprocess_html(&$variables, $hook) {
 
     drupal_add_css($path . '/css/colors/' . $color . '.css', array('group' => CSS_THEME, 'type' => 'file', 'id' => 'themeColor'));
     drupal_add_css($path . '/css/style-responsive.css', array('group' => CSS_THEME, 'type' => 'file'));
-  }
+  //}
 
   // passing variables to the javascript files
   $google_apikey      = theme_get_setting('gmap_api_key');
@@ -202,7 +215,7 @@ function skeleton_preprocess_node(&$variables, $hook) {
   if (variable_get('node_submitted_' . $node->type, TRUE)) {
     $variables['display_submitted'] = TRUE;
 
-    $date = format_date($node->created, 'custom', 'M d, Y');
+    $date = format_date($node->created, 'custom', 'j M Y');
     $user = theme('username', array('account' => $node));
 
     $variables['submitted'] = '<ul class="submitted">';
