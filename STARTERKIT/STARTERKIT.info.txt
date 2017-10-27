@@ -1,6 +1,6 @@
 name = Starterkit
 description = This is a sub-theme of theme Skeleton.
-core = 7.x
+core = 7.x-1.0
 base theme = skeleton
 
 
