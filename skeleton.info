@@ -91,7 +91,7 @@ features[] = secondary_menu
 
 
 ; Set the default values of settings on the theme-settings.php form.
-settings[theme_color] = default
+settings[theme_color] = default_color
 settings[layout_version] = wide
 settings[fixed_header] = no
 

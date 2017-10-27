@@ -47,6 +47,13 @@ installed in sites/all/themes/, but any valid theme directory is acceptable
     For example, edit foo/template.php and foo/theme-settings.php and replace
     every occurrence of "STARTERKIT" with "foo".
 
+    Rename the js/STARTERKIT.js with the name of your sub-theme and edit the
+    file; replace ALL occurrences of "STARTERKIT" with the name of your
+    sub-theme.
+
+    For example, rename js/STARTERKIT.js to js/foo.js; edit the file and
+    replace every occurrence of "STARTERKIT" with "foo".
+
     It is recommended to use a text editing application with search and
     "replace all" functionality.
 
