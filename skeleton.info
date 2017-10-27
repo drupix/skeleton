@@ -1,7 +1,7 @@
 name        = Skeleton
 description = Starter theme by diresta - drupal-solutions
 screenshot  = screenshot.png
-core        = 7.x-1.0
+core        = 7.x
 
 
 ; Stylesheets
