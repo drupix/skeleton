@@ -56,8 +56,8 @@
     }
 	?>
 	<!--[if lte IE 8]>
-	<script src="/sites/all/themes/specialone/js/excanvas.js"></script>
-  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<script src="/sites/all/themes/skeleton/js/excanvas.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
   <![endif]-->
 	<?php print $styles; ?>
 	<?php print $scripts; ?>
