@@ -60,7 +60,14 @@ li a.active {
 #footer-four-columns a:focus {
   color: #0088CC;
 }
-
+#footer-four-columns a.btn:hover,
+#footer-four-columns a.btn:focus {
+  color: #FFFFFF;
+}
+#footer-four-columns .nav > li > a:hover,
+#footer-four-columns .nav > li > a:focus {
+  background-color: transparent;
+}
 
 
 /*************************************/
@@ -233,28 +240,10 @@ li.dropdown:hover > a {
   color: #0088CC;
 }
 
-.panel:hover .panel-info h3 {
+.panel:hover .panel-info .title,
+.panel:hover .panel-content .title {
    color: #0088CC;
 }
-
-/* Panels Version 2 */
-
-.panel-2:hover h4 {
-  color: #0088CC;
-}
-
-.panel-2 .panel-icon {
-  box-shadow: 0 0 0 1px #0088CC;
-}
-
-.panel-2 .panel-icon:after {
-  background: #0088CC;
-}
-
-.panel-2:hover .panel-icon {
-  color: #0088CC;
-}
-
 
 
 /****************************/

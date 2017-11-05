@@ -55,6 +55,192 @@ li a.active {
 /*************************************/
 /**** footer four columns regions ****/
 /*************************************/
+#footer-four-columns a:hover,
+#footer-four-columns a:focus {
+  color: #555555;
+}
+#footer-four-columns a.btn:hover,
+#footer-four-columns a.btn:focus {
+  color: #FFFFFF;
+}
+#footer-four-columns .nav > li > a:hover,
+#footer-four-columns .nav > li > a:focus {
+  background-color: transparent;
+}
+
+/*************************************/
+/*********** footer region ***********/
+/*************************************/
+
+footer a:hover,
+footer a:focus {
+  color: #555555;
+}
+
+
+
+
+
+
+/**********************************************************************************/
+/**********************************************************************************/
+/************************************** Menu **************************************/
+/**********************************************************************************/
+/**********************************************************************************/
+
+/*************************************/
+/****** Mobile Main navigation *******/
+/*************************************/
+#nav-mobile li a:hover,
+#nav-mobile li a:focus {
+  color: #555555;
+}
+
+/*************************************/
+/********** Main navigation **********/
+/*************************************/
+
+.navbar .nav > li > a:hover,
+.navbar .nav > li > a:focus {
+  color: #555555;
+  border-bottom: 1px solid #555555;
+}
+
+.navbar .nav > .active > a,
+.navbar .nav > .active > a:hover,
+.navbar .nav > .active > a:focus {
+  color: #555555;
+  border-bottom: 1px solid #555555;
+}
+
+/* Dropdown menu */
+li.dropdown:hover > a {
+  color: #555555;
+}
+
+.dropdown-menu {
+  border-top: 1px solid #555555;
+}
+
+.dropdown-menu > li > a:hover,
+.dropdown-menu > li > a:focus,
+.dropdown-submenu:hover > a,
+.dropdown-submenu:focus > a {
+  color: #555555;
+}
+
+.dropdown-menu > .active > a,
+.dropdown-menu > .active > a:hover,
+.dropdown-menu > .active > a:focus {
+  color: #555555;
+}
+
+.navbar .nav li.dropdown.open > .dropdown-toggle,
+.navbar .nav li.dropdown.active > .dropdown-toggle,
+.navbar .nav li.dropdown.open.active > .dropdown-toggle {
+  color: #555555;
+}
+
+
+
+/*************************************/
+/******** Administration menu ********/
+/*************************************/
+
+.nav-pills > li > a:hover,
+.nav-pills > li > a:focus,
+.nav-pills > .active > a,
+.nav-pills > .active > a:hover,
+.nav-pills > .active > a:focus {
+  color: #555555;
+}
+
+
+
+
+
+
+/************************************************************************************/
+/************************************************************************************/
+/************************************** Slider **************************************/
+/************************************************************************************/
+/************************************************************************************/
+
+/*************************************/
+/************ Nivo Slider ************/
+/*************************************/
+
+.theme-default .nivo-controlNav a.active {
+  color: #555555;
+}
+
+
+
+/*************************************/
+/********** Sequence Slider **********/
+/*************************************/
+
+.sequence-preloader .preloading .circle {
+    fill: #555555;
+}
+
+
+
+
+
+
+/*********************************************************************************/
+/*********************************************************************************/
+/*********************************** Portfolio ***********************************/
+/*********************************************************************************/
+/*********************************************************************************/
+
+.portfolio-item:hover .portfolio-title {
+  border-bottom: 1px solid #555555;
+}
+
+.portfolio-item .portfolio-title a:hover {
+  color: #555555;
+}
+
+/* Portfolio Block Version 2 */
+
+.portfolio-block-2 .portfolio2-item a {
+  background: #555555;
+}
+
+
+
+
+
+
+/********************************************************************************/
+/********************************************************************************/
+/************************************ Blocks ************************************/
+/********************************************************************************/
+/********************************************************************************/
+
+/****************************/
+/********** Panels **********/
+/****************************/
+
+/* Panels Version 1 */
+.panel .panel-icon .icon {
+  box-shadow: 0 0 0 2px #555555;
+}
+
+.panel .panel-icon .icon:after {
+  background: #555555;
+}
+
+.panel:hover .panel-icon .icon {
+  color: #555555;
+}
+
+.panel:hover .panel-info .title,
+.panel:hover .panel-content .title {
+   color: #555555;
+=======
 
 #footer-four-columns a:hover,
 #footer-four-columns a:focus {
@@ -252,6 +438,7 @@ li.dropdown:hover > a {
 
 .panel-2:hover .panel-icon {
   color: #555555;
+>>>>>>> refs/remotes/origin/master
 }
 
 

@@ -9,9 +9,7 @@
   .boxed-version {
     margin: 0px;
   }
-  
-  
-  
+
   
   /*********************************************************************************/
   /*********************************************************************************/
@@ -22,8 +20,6 @@
   .switcher {
     display: none;
   }
-  
-  
   
 }
 
@@ -40,18 +36,20 @@
   /****************************/
    
   /* This two classes exist to prevent the logo resizing in small devices. Change them to your needs */
-  header .row-fluid .span9 {
-    width: 65.74585635359117%;
-    *width: 65.69266486422946%;
-  }
-   
-  header .row-fluid .span3 {
-    width: 31.491712707182323%;
-    *width: 31.43852121782062%;
+  header .row-fluid {
+    .span9 {
+      width: 65.74585635359117%;
+      *width: 65.69266486422946%;
+    }
+    .span3 {
+      width: 31.491712707182323%;
+      *width: 31.43852121782062%;
+    }
   }
   /* End of the previous mentioned two classes */
   
   .nivo-caption {
+    opacity: 1;
     position: relative;
   }
   
@@ -64,33 +62,33 @@
   /*************************************/
   /********** Main navigation **********/
   /*************************************/
-	.mobile-menu-trigger {
-	  display: block;
-	}
+  .mobile-menu-trigger {
+	display: block;
+  }
+  
   #nav {
     display: none;
     margin-top: 43px;
     margin-bottom: 5px;
   }
   
-  .navbar .container {
-     background-color: #f6f6f6;
+  .navbar {
+    .container {
+      background-color: #f6f6f6;
+    }
+    .brand {
+      display: none;
+      padding-left: 0px;
+      padding-right: 0px;
+      margin: 0px 0px 0px 0px;
+      text-align: center;
+      float: none;
+    }
+    .nav > li > a {
+      border-bottom: 0px solid transparent;
+    }
   }
-   
-  .navbar .brand {
-/*     display: block; */
-    display: none;
-    padding-left: 0px;
-    padding-right: 0px;
-    margin: 0px 0px 0px 0px;
-    text-align: center;
-    float: none;
-  }
-  
-  .navbar .nav > li > a {
-    border-bottom: 0px solid transparent;
-  }
-     
+
   .nav-collapse .nav {
     margin: 0px;
   }
@@ -108,24 +106,24 @@
   .nav-collapse .dropdown-menu {
     background-color: #f3f3f3;
     margin: 0px;
+
+    a {
+      font-size: 13px;
+    }
+
+    li + li a {
+      margin-bottom: 0px;
+    }
   }
    
-  .nav-collapse .dropdown-menu a {
-    font-size: 13px;
-  }
+/*   .nav-collapse .dropdown-menu > .active > a { */
+/*     background-color: #f3f3f3; */
+/*   } */
    
-  .nav-collapse .dropdown-menu li + li a {
-    margin-bottom: 0px;
-  }
-  
-  .nav-collapse .dropdown-menu > .active > a {
-    background-color: #f3f3f3;
-  }
-   
-  .nav-collapse .dropdown-menu > .active > a:hover,
-  .nav-collapse .dropdown-menu > .active > a:focus {
-    background-color: #ededed;
-  }
+/*   .nav-collapse .dropdown-menu > .active > a:hover, */
+/*   .nav-collapse .dropdown-menu > .active > a:focus { */
+/*     background-color: #ededed; */
+/*   } */
      
   .nav-collapse .nav > li > a,
   .nav-collapse .dropdown-menu a {
@@ -259,13 +257,14 @@
     font-size: 14px;
   }
   
-  .block-title:before {
-    font-size: 19px;
-    line-height: 19px;
-  }
-  
   .block-title {
     line-height: 21px;
+  
+    &:before {
+      font-size: 19px;
+      line-height: 19px;
+    }
+
   }
   
   .highlighted-text {
@@ -293,12 +292,6 @@
   }
   
   
-
-
-
-
-
-
   /***********************************************************************************/
   /***********************************************************************************/
   /************************************* Regions *************************************/
@@ -312,7 +305,6 @@
   #header-region .span6 {
     min-height: 15px;
   }
-  
   
   
   /*************************************/
@@ -336,17 +328,13 @@
   #logo {
     text-align: center;
     padding: 0px;
-  }
-  #logo img {
-    max-height: 96px;
+    img {
+      max-height: 96px;
+    }
   }
   
   #site-name h1 {
     font-size: 36px;
-  }
-
-  .nivo-caption {
-    position: relative;
   }
 
   /*************************************/
@@ -373,11 +361,6 @@
     margin-bottom: 10px;
   }
 
-
-
-
-
-
   /************************************************************************************/
   /************************************************************************************/
   /************************************** Slider **************************************/
@@ -387,6 +370,15 @@
   /*************************************/
   /************ Nivo Slider ************/
   /*************************************/
+
+  .nivo-caption {
+    opacity: 1;
+    position: relative;
+  }
+
+  #block-nivo-slider-nivo-slider .nivoSlider {
+    background-position: 50% 0;
+  }
   
   .nivo-directionNav {
     display: none;
@@ -409,23 +401,20 @@
 		top: auto;
 		bottom: 10px;
 		padding: 5px 0;
-	}
 	
-	.ei-title h2, .ei-title h3 {
-		text-align: center;
-	}
-	
-	.ei-title h2 {
-		font-size: 20px;
-		line-height: 24px;
-	}
-	
-	.ei-title h3 {
-		font-size: 30px;
-		line-height: 40px;
-	}
-
-  
+  	h2, h3 {
+      text-align: center;
+    }
+    h2 {
+      font-size: 20px;
+      line-height: 24px;
+    }
+    
+    h3 {
+      font-size: 30px;
+      line-height: 40px;
+    }
+  }
   
   /*************************************/
   /********** Sequence Slider **********/
@@ -433,6 +422,7 @@
   
   #sequence {
     height: 400px;
+  
   }
   
   .sequence-next,
@@ -490,10 +480,6 @@
   }
 
 
-
-
-
-
   /***********************************************************************************/
   /***********************************************************************************/
   /************************************** Nodes **************************************/
@@ -503,10 +489,6 @@
   .node-image-teaser {
     margin-bottom: 10px;
   }
-  
-  
-  
-  
   
   
   /**********************************************************************************/
@@ -528,10 +510,6 @@
   .blog-image-teaser {
     margin-bottom: 10px;
   }
-  
-  
-  
-  
   
   
   /*********************************************************************************/
@@ -567,10 +545,6 @@
   }
   
   
-  
-  
-  
-  
   /*********************************************************************************/
   /*********************************************************************************/
   /************************************ Isotope ************************************/
@@ -583,11 +557,7 @@
   #container-isotope .row-fluid .span6, #container-isotope .span6 {
     margin-left: 0;
   }
-  
-  
-  
-  
-  
+
   
   /********************************************************************************/
   /********************************************************************************/
@@ -610,11 +580,9 @@
   }
   
   /* Panels Version 2 */
-  
   .panel-2 {
     float: left !important;
   }
-  
   
   
   /****************************/
@@ -625,8 +593,7 @@
     padding: 0px;
   }
    
-  
-  
+
   /*****************************/
   /****** Social Networks ******/
   /*****************************/
@@ -643,7 +610,6 @@
   }
   
   
-  
   /*******************************/
   /********* Google maps *********/
   /*******************************/
@@ -657,9 +623,6 @@
   .page-contact .contact-form {
     width: 100%;
   }
-
-  
-  
   
   
   /********************************************************************************/
@@ -675,14 +638,13 @@
   /* Arrows carousel */
   .carousel-arrows {
     font-size: 23px;
+
+    .carousel-arrow-left,
+    .carousel-arrow-right {
+      top: -51px;
+    }
   }
 
-  .carousel-arrows .carousel-arrow-left,
-  .carousel-arrows .carousel-arrow-right {
-    top: -51px;
-  }
-  
-  
   
   /**********************************/
   /*********  Our Partners  *********/
@@ -695,7 +657,6 @@
   .partners .partner:last-child {
     margin-bottom: 0px;
   }
-  
   
   
   /*****************************************/
@@ -711,7 +672,6 @@
   }
   
   
-  
   /**********************************/
   /***********  Our Team  ***********/
   /**********************************/
@@ -725,18 +685,17 @@
   }
   
   
-  
   /***********************************/
   /*********  Happy Clients  *********/
   /***********************************/
 
   .happy {
     margin-bottom: 0px;
-  }
-  
-  .happy .happy-item {
-    display: inline-block;
-    margin-bottom: 30px;
+    
+    .happy-item {
+      display: inline-block;
+      margin-bottom: 30px;
+    }
   }
   
   .happy:last-child .happy-item:last-child {

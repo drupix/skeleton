@@ -3,7 +3,6 @@ description = Starter theme by diresta - drupal-solutions
 screenshot  = screenshot.png
 core        = 7.x
 
-
 ; Stylesheets
 
 ; Add bootstrap
@@ -11,6 +10,8 @@ stylesheets[all][] = css/bootstrap.min.css
 stylesheets[all][] = css/bootstrap-responsive.min.css
 ; Add Skeleton styles
 stylesheets[all][] = css/styles.css
+stylesheets[all][] = css/styles-responsive.css
+
 ; Add font-awesome
 stylesheets[all][] = css/font-awesome.min.css
 ; Add flexslider

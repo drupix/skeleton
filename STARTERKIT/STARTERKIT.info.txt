@@ -3,9 +3,9 @@ description = This is a sub-theme of theme Skeleton.
 core = 7.x
 base theme = skeleton
 
-
 ; Add our custom stylesheets 
 stylesheets[all][] = css/style.css
+stylesheets[all][] = css/style-responsive.css
 
 ; Scripts
 
