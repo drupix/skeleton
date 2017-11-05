@@ -90,8 +90,6 @@ Optional steps:
 
  7. Further extend your sub-theme.
 
-    Discover further ways to extend your sub-theme by reading Skeleton's
-    documentation online at: 
-      https://drupal.org/documentation/theme/skeleton
-    and Drupal 7's Theme Guide online at:
+    Discover further ways to extend your sub-theme by reading Drupal 7's Theme
+    Guide online at:
       https://drupal.org/theme-guide
