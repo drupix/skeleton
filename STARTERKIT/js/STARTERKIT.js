@@ -14,11 +14,11 @@
   
   //To understand behaviors, see https://drupal.org/node/756722#behaviors
   Drupal.behaviors.STARTERKIT = {
-   attach: function(context, settings) {
+    attach: function(context, settings) {
   
-     // Place your code here.
-	   
-   }
+    // Place your code here.
+    
+    }
   };
 
 })(jQuery, Drupal, this, this.document);
