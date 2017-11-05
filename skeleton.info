@@ -11,6 +11,7 @@ stylesheets[all][] = css/bootstrap-responsive.min.css
 ; Add Skeleton styles
 stylesheets[all][] = css/styles.css
 stylesheets[all][] = css/styles-responsive.css
+
 ; Add font-awesome
 stylesheets[all][] = css/font-awesome.min.css
 ; Add flexslider
