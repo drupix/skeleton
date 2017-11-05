@@ -6,6 +6,7 @@ base theme = skeleton
 
 ; Add our custom stylesheet
 stylesheets[all][] = css/style.css
+stylesheets[all][] = css/style-responsive.css
 
 ; Scripts
 
