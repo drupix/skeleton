@@ -4,11 +4,8 @@ core = 7.x
 base theme = skeleton
 
 
-; Stylesheets
-
-;stylesheets[all][] = css/bootstrap.min.css
+; Add our custom stylesheet
 stylesheets[all][] = css/style.css
-;stylesheets[all][] = css/bootstrap-responsive.min.css
 
 ; Scripts
 

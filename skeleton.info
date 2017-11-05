@@ -6,12 +6,18 @@ core        = 7.x
 
 ; Stylesheets
 
-; Skeleton - Add bootstrap
+; Add bootstrap
 stylesheets[all][] = css/bootstrap.min.css
-stylesheets[all][] = css/styles.css
 stylesheets[all][] = css/bootstrap-responsive.min.css
+; Add Skeleton styles
+stylesheets[all][] = css/styles.css
+stylesheets[all][] = css/styles-responsive.css
+; Add font-awesome
 stylesheets[all][] = css/font-awesome.min.css
+; Add flexslider
 stylesheets[all][] = css/flexslider.css
+; Add jplayer
+stylesheets[all][] = jplayer/theme/jplayer.css";
 
 
 ; Scripts
@@ -91,7 +97,7 @@ features[] = secondary_menu
 
 
 ; Set the default values of settings on the theme-settings.php form.
-settings[theme_color] = default
+settings[theme_color] = default_color
 settings[layout_version] = wide
 settings[fixed_header] = no
 

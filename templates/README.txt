@@ -4,28 +4,21 @@ TEMPLATES
 Drupal 7 contains the following template files which you can override and modify
 by copying them to your sub-theme.
 
-The Zen theme overrides a handful of Drupal's templates. In order to override
-those templates, you should copy them from the zen/templates folder to your
+The Skeleton theme overrides a handful of Drupal's templates. In order to override
+those templates, you should copy them from the Skeleton/templates folder to your
 sub-theme's templates folder.
 
 As always, when adding a new template file to your sub-theme, you will need to
 rebuild the "theme registry" in order for Drupal to see it. For more info, see:
   https://drupal.org/node/173880#theme-registry
 
-Located in zen/templates:
+Located in skeleton/templates:
   html.tpl.php
   page.tpl.php
   maintenance-page.tpl.php
   node.tpl.php
-  region.tpl.php
-  region--footer.tpl.php
-  region--sidebar.tpl.php
-  region--no-wrapper.tpl.php
   block.tpl.php
-  block--no-wrapper.tpl.php
-  comment-wrapper.tpl.php
-  comment.tpl.php
-  user-picture.tpl.php
+  block--user--login.tpl.php
 
 Located in /modules/aggregator:
   aggregator-feed-source.tpl.php
@@ -35,7 +28,7 @@ Located in /modules/aggregator:
   aggregator-wrapper.tpl.php
 
 Located in /modules/block:
-  block.tpl.php  (overridden by Zen)
+  block.tpl.php  (overridden by Skeleton)
   block-admin-display-form.tpl.php
 
 Located in /modules/book:
@@ -45,8 +38,8 @@ Located in /modules/book:
   book-node-export-html.tpl.php
 
 Located in /modules/comment:
-  comment-wrapper.tpl.php  (overridden by Zen)
-  comment.tpl.php  (overridden by Zen)
+  comment-wrapper.tpl.php
+  comment.tpl.php
 
 Located in /modules/field/theme:
   field.tpl.php  (not used; core uses theme_field() instead)
@@ -59,7 +52,7 @@ Located in /modules/forum:
   forums.tpl.php
 
 Located in /modules/node:
-  node.tpl.php  (overridden by Zen)
+  node.tpl.php  (overridden by Skeleton)
 
 Located in /modules/overlay:
   overlay.tpl.php
@@ -82,10 +75,10 @@ Located in /modules/search:
   search-results.tpl.php
 
 Located in /modules/system:
-  html.tpl.php  (overridden by Zen)
-  maintenance-page.tpl.php  (overridden by Zen)
-  page.tpl.php  (overridden by Zen)
-  region.tpl.php  (overridden by Zen)
+  html.tpl.php  (overridden by Skeleton)
+  maintenance-page.tpl.php  (overridden by Skeleton)
+  page.tpl.php  (overridden by Skeleton)
+  region.tpl.php
 
 Located in /modules/taxonomy:
   taxonomy-term.tpl.php
@@ -94,7 +87,8 @@ Located in /modules/toolbar:
   toolbar.tpl.php
 
 Located in /modules/user:
-  user-picture.tpl.php  (overridden by Zen)
+  user-picture.tpl.php
   user-profile-category.tpl.php
   user-profile-item.tpl.php
   user-profile.tpl.php
+  

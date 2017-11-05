@@ -41,7 +41,7 @@ function skeleton_preprocess_maintenance_page(&$variables, $hook) {
  */
 //* -- Delete this line if you want to use this function
 function skeleton_preprocess_html(&$variables, $hook) {
-  global $language;
+global $language;
   global $custom_theme, $theme, $user;
 
   $fixed_header = theme_get_setting('fixed_header');
@@ -75,7 +75,8 @@ function skeleton_preprocess_html(&$variables, $hook) {
     //$variables['classes_array'] = array_diff($variables['classes_array'], array('class-to-remove'));
 
     drupal_add_css($path . '/css/colors/' . $color . '.css', array('group' => CSS_THEME, 'type' => 'file', 'id' => 'themeColor'));
-    drupal_add_css($path . '/css/style-responsive.css', array('group' => CSS_THEME, 'type' => 'file'));
+    //sassed 
+    //drupal_add_css($path . '/css/style-responsive.css', array('group' => CSS_THEME, 'type' => 'file'));
   //}
 
   // passing variables to the javascript files
@@ -276,7 +277,7 @@ function skeleton_preprocess_comment(&$variables, $hook) {
  */
 /* -- Delete this line if you want to use this function
 function skeleton_preprocess_region(&$variables, $hook) {
-  // Don't use Zen's region--sidebar.tpl.php template for sidebars.
+  // Don't use Skeleton's region--sidebar.tpl.php template for sidebars.
   //if (strpos($variables['region'], 'sidebar_') === 0) {
   //  $variables['theme_hook_suggestions'] = array_diff($variables['theme_hook_suggestions'], array('region__sidebar'));
   //}
@@ -295,12 +296,6 @@ function skeleton_preprocess_region(&$variables, $hook) {
 function skeleton_preprocess_block(&$variables, $hook) {
   // Add a count to all the blocks in the region.
   // $variables['classes_array'][] = 'count-' . $variables['block_id'];
-
-  // By default, Zen will use the block--no-wrapper.tpl.php for the main
-  // content. This optional bit of code undoes that:
-  //if ($variables['block_html_id'] == 'block-system-main') {
-  //  $variables['theme_hook_suggestions'] = array_diff($variables['theme_hook_suggestions'], array('block__no_wrapper'));
-  //}
 }
 // */
 
@@ -351,7 +346,8 @@ function skeleton_preprocess_maintenance_page(&$variables) {
   $path = path_to_theme();
   $color = theme_get_setting('theme_color');
   drupal_add_css($path . '/css/colors/' . $color . '.css', array('group' => CSS_THEME, 'type' => 'file'));
-  drupal_add_css($path . '/css/style-responsive.css', array('group' => CSS_THEME, 'type' => 'file'));
+  //sassed 
+  //drupal_add_css($path . '/css/style-responsive.css', array('group' => CSS_THEME, 'type' => 'file'));
 
   $variables['email_maintenance'] = theme_get_setting('email_maintenance');
 }

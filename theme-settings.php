@@ -24,7 +24,7 @@ function skeleton_form_system_theme_settings_alter(&$form, &$form_state, $form_i
     '#description'   => t("This option doesn't do anything; it's just an example."),
   );
   // */
-  $theme_colors = array('default' => t('Default'),
+  $theme_colors = array('default_color' => t('Default'),
 	                      //'aqua'    => t('Aqua'),
 	                      'blue'    => t('Blue'),
 	                      /*
