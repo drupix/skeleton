@@ -353,13 +353,13 @@ footer {
   background-color: #ffffff;
   position: fixed;
   margin: 0;
+  z-index: 1000;
 }
 #top-page.fixed {
   border-bottom: 1px solid #ededed;
   position: fixed;
   top: 0;
   width: 100%;
-  z-index: 10;
 }
 
 .admin-menu {
