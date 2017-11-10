@@ -14,36 +14,50 @@
   
   //To understand behaviors, see https://drupal.org/node/756722#behaviors
   Drupal.behaviors.skeleton_custom = {
-   attach: function(context, settings) {
+    attach: function(context, settings) {
 
-     // Place your code here.
+      // Place your code here.
      
-     // Mobile Main Menu
-     $('#nav-mobile ul.dropdown-menu').removeClass('dropdown-menu');
+      // Mobile Main Menu
+      $('#nav-mobile ul.dropdown-menu').removeClass('dropdown-menu');
+      
+      function closeMenu(){
+        $('#nav-mobile').removeClass('active');
+        $('#main-wrapper').removeClass('mobile-menu-active');  
+      }
+      function openMenu(){
+        $('#nav-mobile').addClass('active');
+        $('#main-wrapper').addClass('mobile-menu-active');  
+      }
      
-     $('.mobile-menu-trigger').click(function() {
-       if( $('#nav-mobile').hasClass('active') ) {
-         $('#nav-mobile').removeClass('active');
-         $('#main-wrapper').removeClass('mobile-menu-active');
-       }
-       else {
-         $('#nav-mobile').addClass('active');
-         $('#main-wrapper').addClass('mobile-menu-active');
-       }
-     });
-     // END Mobile Main Menu
+      $('.mobile-menu-trigger').click(function() {
+        if( $('#nav-mobile').hasClass('active') ) {
+          closeMenu();
+        }
+        else {
+          openMenu();
+        }
+        e.stopPropagation(); // this stops the event from bubbling up to the body
+      });
+      
+      $(document.body).click( function() {
+        closeMenu();
+      });
+      
+      $('#nav-mobile').click(function(e) {
+        e.stopPropagation(); // this stops the event from bubbling up to the body
+      });
+      // END Mobile Main Menu
 
-     $('.front.not-logged-in .form-submit').addClass('btn');
+      $('.front.not-logged-in .form-submit').addClass('btn');
      
-     $('.checkout-login').click(function() {
+      $('.checkout-login').click(function() {
+        $('#myLoginModal .alert-info').removeClass('hidden');
+      })
 
-       $('#myLoginModal .alert-info').removeClass('hidden');
-       
-     })
-
-     $('.captcha .fieldset-legend').addClass('hidden');
+      $('.captcha .fieldset-legend').addClass('hidden');
      
-   }
+    }
   };
 
 })(jQuery, Drupal);
