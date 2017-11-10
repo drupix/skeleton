@@ -145,55 +145,56 @@ jQuery(window).load(function() {
 
   if (document.getElementById('map_canvas')) {
    
-   // loading the theme settings for the google maps
-   var gLatitude = Drupal.settings['settings']['google_latitude'];
-   var gLongitude = Drupal.settings['settings']['google_longitude'];
-   var gZoom = Drupal.settings['settings']['google_zoom'];
-   var gTitle = Drupal.settings['settings']['google_title'];
-   var gDescription = Drupal.settings['settings']['google_description'];
+    // loading the theme settings for the google maps
+    var gLatitude = Drupal.settings['settings']['google_latitude'];
+    var gLongitude = Drupal.settings['settings']['google_longitude'];
+    var gZoom = Drupal.settings['settings']['google_zoom'];
+    var gTitle = Drupal.settings['settings']['google_title'];
+    var gDescription = Drupal.settings['settings']['google_description'];
      
-   var latlng = new google.maps.LatLng(gLatitude, gLongitude);
+    var latlng = new google.maps.LatLng(gLatitude, gLongitude);
    
-   var settings = {
-     zoom: parseInt(gZoom),
-     center: latlng,
-     scrollwheel: false,
-     mapTypeControl: true,
-     mapTypeControlOptions: {style: google.maps.MapTypeControlStyle.DROPDOWN_MENU},
-     navigationControl: true,
-     navigationControlOptions: {style: google.maps.NavigationControlStyle.SMALL},
-     mapTypeId: google.maps.MapTypeId.ROADMAP
-   };
+    var settings = {
+      zoom: parseInt(gZoom),
+      center: latlng,
+      scrollwheel: false,
+      mapTypeControl: true,
+      mapTypeControlOptions: {style: google.maps.MapTypeControlStyle.DROPDOWN_MENU},
+      navigationControl: true,
+      navigationControlOptions: {style: google.maps.NavigationControlStyle.SMALL},
+      mapTypeId: google.maps.MapTypeId.ROADMAP
+    };
    
-   var map = new google.maps.Map(document.getElementById("map_canvas"), settings);
+    var map = new google.maps.Map(document.getElementById("map_canvas"), settings);
    
-   var companyLogo = new google.maps.MarkerImage('/sites/all/themes/skeleton/img/google-maps/map-marker.png',
-     new google.maps.Size(30,46),
-     new google.maps.Point(0,0),
-     new google.maps.Point(10,30)
-   );
+    var companyLogo = new google.maps.MarkerImage('/sites/all/themes/skeleton/img/google-maps/map-marker.png',
+      new google.maps.Size(30,46),
+      new google.maps.Point(0,0),
+      new google.maps.Point(10,30)
+    );
       
-   var companyMarker = new google.maps.Marker({
-     position: latlng,
-          map: map,
-         //XXX: Set custom icon here
-         //icon: companyLogo,
-        title: gTitle
-   });
+    var companyMarker = new google.maps.Marker({
+      position: latlng,
+      map: map,
+      //XXX: Set custom icon here
+      //icon: companyLogo,
+      title: gTitle
+    });
    
-   var contentString = '<div id="content-map">'+
-       '<h3 style="margin-top: 0px;">' + gTitle + '</h3>'+
-       '<p>' + gDescription + '</p>'+
-       '</div>';
-   
-   var infowindow = new google.maps.InfoWindow({
-       content: contentString
-   });
-   
-   google.maps.event.addListener(companyMarker, 'click', function() {
-     infowindow.open(map,companyMarker);
-   });
-  
+    if(gTitle!='' || gDescription!='') {
+	  var contentString = '<div id="content-map">'+
+	    '<h3 style="margin-top: 0px;">' + gTitle + '</h3>'+
+	    '<p>' + gDescription + '</p>'+
+	    '</div>';
+		   
+	  var infowindow = new google.maps.InfoWindow({
+	    content: contentString
+	  });
+	   
+	  google.maps.event.addListener(companyMarker, 'click', function() {
+	    infowindow.open(map,companyMarker);
+	  });
+    }
   }
 
 });
