@@ -30,7 +30,7 @@
         $('#main-wrapper').addClass('mobile-menu-active');  
       }
      
-      $('.mobile-menu-trigger').click(function() {
+      $('.mobile-menu-trigger').click(function(e) {
         if( $('#nav-mobile').hasClass('active') ) {
           closeMenu();
         }

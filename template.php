@@ -148,6 +148,16 @@ function skeleton_preprocess_page(&$variables, $hook) {
 		$variables['secondary_nav'] = menu_tree(variable_get('menu_secondary_links_source', 'user-menu'));
 	}
 
+	/**** Configuring the classes for the Header region columns ****/
+	//Define variables for easy code writing to calculate the classes for the Footer columns
+	$variables['top_header_class'] = 'span6';
+	//dpm($variables);
+	$h_left = $variables['page']['header_left'];
+	$h_right = $variables['page']['header_right'];
+	
+	if (!$h_left || !$h_right) { $variables['top_header_class'] = 'span12'; }
+	
+	
 	/**** Configuring the classes for the Sidebars and Content regions ****/
 	$variables['sidebar_class'] = 'span3';
 	$variables['content_class'] = 'span6';

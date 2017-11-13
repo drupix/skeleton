@@ -19,12 +19,16 @@
       <div id="header-region">
         <div class="content-wrapper">
           <div class="row-fluid wrapper">
-            <div class="span6">
+          	<?php if ($page['header_left']) : ?>
+            <div class="<?php print $top_header_class ?>">
               <?php if ($page['header_left']) { print render($page['header_left']); } ?>
             </div>
-            <div class="span6 text-right text-center-responsive">
+            <?php endif; ?>
+            <?php if ($page['header_right']) : ?>
+            <div class="<?php print $top_header_class ?> text-right text-center-responsive">
               <?php if ($page['header_right']) { print render($page['header_right']); } ?>
             </div>
+            <?php endif; ?>
           </div>
         </div>
       </div>
