@@ -34,10 +34,9 @@ body {
   .cke_show_borders {
     background-color: #FFFFFF;
   }
-  
-  .admin-menu {
-    margin-top: 30px !important;
-  }
+}
+body.admin-menu {
+  margin-top: 30px !important;
 }
 
 #main-wrapper {
