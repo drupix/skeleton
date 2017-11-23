@@ -27,14 +27,18 @@ body {
   font-family: 'Trebuchet MS',Geneva,sans-serif !important;
   /*font-size: 12px;*/
   /*font-size: $base-font-size;*/
-
-  .boxed {
-    background-color: #ececec;
-  }
-  .cke_show_borders {
-    background-color: #FFFFFF;
-  }
 }
+body.boxed {
+  background-color: #ececec;
+}
+body.cke_show_borders {
+  background-color: #FFFFFF;
+  background-image: none;
+}
+.cke_panel_frame {
+  background: #FFFFFF;
+}
+
 body.admin-menu {
   margin-top: 30px !important;
 }
