@@ -17,7 +17,7 @@ stylesheets[all][] = css/font-awesome.min.css
 ; Add flexslider
 stylesheets[all][] = css/flexslider.css
 ; Add jplayer
-stylesheets[all][] = jplayer/theme/jplayer.css";
+stylesheets[all][] = jplayer/theme/jplayer.css;
 
 
 ; Scripts
