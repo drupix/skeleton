@@ -158,6 +158,16 @@ function skeleton_preprocess_page(&$variables, $hook) {
 	if (!$h_left || !$h_right) { $variables['top_header_class'] = 'span12'; }
 	
 	
+	/**** Configuring the classes for the Top Content region ****/
+	//Define variables for easy code writing to calculate the classes for the Top content
+	$variables['top_content_class'] = 'span6';
+	//dpm($variables);
+	$t_left = $variables['page']['top_content_left'];
+	$t_right = $variables['page']['top_content_right'];
+	
+	if (!$t_left || !$t_right) { $variables['top_content_class'] = 'span12'; }
+	
+	
 	/**** Configuring the classes for the Sidebars and Content regions ****/
 	$variables['sidebar_class'] = 'span3';
 	$variables['content_class'] = 'span6';
