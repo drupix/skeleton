@@ -88,12 +88,12 @@
       <div class="row-fluid">
 
         <?php if (!empty($content['field_image'])): ?>
-        <div class="<?php $field_image_class ?> node-image-teaser">
+        <div class="<?php print $field_image_class; ?> node-image-teaser">
           <?php print render($content['field_image']); ?>
         </div>
         <?php endif; ?>
 
-        <div class="<?php $field_image_class ?>">
+        <div class="<?php print $field_image_class; ?>">
           <div class="node-content-teaser">
             <?php print render($title_prefix); ?>
             <h3 class="text-center-responsive"><a href="<?php print $node_url; ?>"><?php print $title; ?></a></h3>
