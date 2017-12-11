@@ -93,12 +93,12 @@
       <div id="top-content-region">
         <div class="row-fluid wrapper">
 
-          <?php $span_size = ($page['top_content_left'] || $breadcrumb_position === "left") && !($page['top_content_right'] || $breadcrumb_position === "right") ? 'span12' : 'span6'; ?>
-          <?php $span_size = ($page['top_content_right'] || $breadcrumb_position === "right") ? 'span6' : $span_size; ?>
+          <?php //$span_size = ($page['top_content_left'] || $breadcrumb_position === "left") && !($page['top_content_right'] || $breadcrumb_position === "right") ? 'span12' : 'span6'; ?>
+          <?php //$span_size = ($page['top_content_right'] || $breadcrumb_position === "right") ? 'span6' : $span_size; ?>
 
           <!-- Top content left region -->
           <?php if($page['top_content_left'] || ($breadcrumb_position === "left")) : ?>
-            <div id="top-content-left-region" class="<?php print $span_size; ?> text-center-responsive">
+            <div id="top-content-left-region" class="<?php print $top_content_class; ?> text-center-responsive">
               <?php if($breadcrumb_position === "left") { print $breadcrumb; } ?>
               <?php if($page['top_content_left']) { print render($page['top_content_left']); } ?>
             </div>
@@ -107,7 +107,7 @@
 
           <!-- Top content right region -->
           <?php if($page['top_content_right'] || ($breadcrumb_position === "right")) : ?>
-            <div id="top-content-right-region" class="<?php print $span_size; ?> text-right text-center-responsive">
+            <div id="top-content-right-region" class="<?php print $top_content_class; ?> text-right text-center-responsive">
               <?php if($breadcrumb_position === "right") { print $breadcrumb; } ?>
               <?php if($page['top_content_right']) { print render($page['top_content_right']); } ?>
             </div>
