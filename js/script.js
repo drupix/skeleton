@@ -105,7 +105,12 @@
 	      // +3 is for borders
 	      //$('#page').css('padding-top', (h+3)+'px');
 	      //$('#page').css('padding-top', (h-t)+'px');
-	      $('#page').css('padding-top', (h+10)+'px');
+	      if($('body').hasClass('admin-menu')) {
+	    	$('#page').css('padding-top', (h)+'px');
+	      }
+	      else {
+	    	$('#page').css('padding-top', (h+10)+'px');  
+	      }
 	    }
 	  }
 	}
