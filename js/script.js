@@ -31,13 +31,18 @@
       }
      
       $('.mobile-menu-trigger').click(function(e) {
-        if( $('#nav-mobile').hasClass('active') ) {
+    	//console.log('Clicked');
+    	if ( e.isPropagationStopped() ) {
+      		return false;
+      	}
+    	e.stopPropagation(); // this stops the event from bubbling up to the body
+    	if( $('#nav-mobile').hasClass('active') ) {
           closeMenu();
         }
         else {
           openMenu();
         }
-        e.stopPropagation(); // this stops the event from bubbling up to the body
+        
       });
       
       $(document.body).click( function() {
@@ -88,7 +93,14 @@
 	    
 	    //var h = $('#top-page').offset();
 	    var h = $('#top-page').outerHeight();
-	    var m = $('#admin-menu').outerHeight();
+	    if($('#admin-menu').length){
+	    	var m = $('#admin-menu').outerHeight();
+	    	//console.log('m = ' + m);
+	    }
+	    else {
+	    	var m = 23;
+	    }
+	    
 	    //console.log('h = ' + h);
 	    //console.log('m = ' + m);
 	    
@@ -97,19 +109,14 @@
 	    d = t-s;
 	    //console.log('d = ' + d);
 	    
-	    //$('#top-page').css('margin-top', (m)+'px');
 	    if (d <= 10) {
 	      $('#page').css('padding-top', (h-10)+'px');
-	//      $('#page').css('padding-top', (h)+'px');
 	    } else {
-	      // +3 is for borders
-	      //$('#page').css('padding-top', (h+3)+'px');
-	      //$('#page').css('padding-top', (h-t)+'px');
 	      if($('body').hasClass('admin-menu')) {
 	    	$('#page').css('padding-top', (h)+'px');
 	      }
 	      else {
-	    	$('#page').css('padding-top', (h+10)+'px');  
+	    	$('#page').css('padding-top', (h-m)+'px');  
 	      }
 	    }
 	  }
