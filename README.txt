@@ -1,3 +1,6 @@
+**WARNING: THIS PROJECT HAS BEEN ARCHIVED AND WILL NOT BE UPDATED**
+**---------------------------------------------------------------**
+
 BUILD A THEME WITH SKELETON
 ---------------------------
 
